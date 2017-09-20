@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Tatiana Sharova](https://up.htmlacademy.ru/adaptive/12/user/218165).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Бухвалова](https://htmlacademy.ru/profile/id114660).
 
 ---
 
