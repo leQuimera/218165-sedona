@@ -4,33 +4,38 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-<body class="page-wrapper">
+
+<body class="page">
   <header class="page-header">
+    <!-- Навигация по сайту -->
     <nav class="page-nav">
       <button class="page-nav__toggle" type="button">Открыть меню</button>
-      <ul page-nav>
+      <ul class="page-nav">
         <li class="page-nav__item"><a class="page-nav__link page-nav__link--active">Главная</a></li>
         <li class="page-nav__item"><a href="photo.html" class="page-nav__link">Фото и видео</a></li>
         <li class="page-nav__item"><a href="form.html" class="page-nav__link">Форма отзыва</a></li>
         <li class="page-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="page-nav__link">HTML Academy</a></li>
       </ul>
     </nav>
+    <!-- //Навигация по сайту  -->
+    <!-- Блок с картинкой  -->
     <div class="page-header__promo">
       <h1 class="page-header__title visually-hidden">Добро пожаловать в Седону</h1>
       <a href="#" class="page-header__link"><img src="http://placehold.it/102x83" alt="Город Седона"></a>
       <img src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
     </div>
+    <!-- //Блок с картинкой  -->
   </header>
-  <main class="page-body">
-    <section class="page-caption">
-      <h2 class="page-caption__title visually-hidden">Седона - супер-город</h2>
-      <p class="page-caption__subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="page-caption__lead">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
-    </section>
+
+  <main class="page-main">
     <section class="features">
-      <h2 class="visually-hidden">5 причин</h2>
-      <ol class="page-features">
-        <li class="page-features__item feature">
+      <h2 class="features__title visually-hidden">Седона - супер-город</h2>
+      <p class="features__subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="features__lead">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
+      <!-- Список причин  -->
+      <ol class="features__list">
+        <!-- Приччина #1  -->
+        <li class="features__item feature">
           <div class="feature__description">
             <h3 class="feature__title">Настоящий городок</h3>
             <span>&#8470;1</span>
@@ -41,20 +46,22 @@
           </div>
           <ul class="feature__list">
             <li class="feature__item feature__item--home">
-              <h4>Жилье</h4>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <h4 class="feature__subtitle">Жилье</h4>
+              <p class="feature__remarque">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="feature__item feature__suvenir">
-              <h4>Сувениры</h4>
-              <p>Не только китайского, но и местного производства!</p>
+              <h4 class="feature__subtitle">Сувениры</h4>
+              <p class="feature__remarque">Не только китайского, но и местного производства!</p>
             </li>
             <li class="feature__item feature__item--meal">
-              <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h4 class="feature__subtitle">Еда</h4>
+              <p class="feature__remarque">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </li>
-        <li class="page-features__item feature">
+        <!-- //Приччина #1  -->
+        <!-- Приччина #2  -->
+        <li class="features__item feature">
           <div class="feature__description">
             <h3 class="feature__title">Там есть мост дьявола</h3>
             <span>&#8470;2</span>
@@ -64,38 +71,49 @@
             <img src="http://placehold.it/320x260" alt="Мост дьявола">
           </div>
         </li>
-        <li class="page-features__item feature">
+        <!-- //Приччина #2  -->
+        <!-- Приччина #3  -->
+        <li class="features__item feature">
           <h3 class="feature__title">Небольшая площадь</h3>
           <p class="feature__text">Все интересные места находятся очень близко</p>
         </li>
-        <li class="page-features__item feature">
+        <!-- //Приччина #3  -->
+        <!-- Приччина #4  -->
+        <li class="features__item feature">
           <h3 class="feature__title">Красивая дорога</h3>
           <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </li>
-        <li class="page-features__item feature">
+        <!-- //Приччина #4  -->
+        <!-- Приччина #5  -->
+        <li class="features__item feature">
           <h3 class="feature__title">Мало туристов</h3>
           <p class="feature__text">Большинство едет в Гран Каньон и толпиться там</p>
         </li>
+        <!-- Приччина #5  -->
       </ol>
+      <!-- //Список причин  -->
     </section>
+
     <section class="search">
       <h2 class="visually-hidden">Поиск жилья</h2>
       <p class="search__subtitle">Заинтересовались?</p>
       <p class="search__lead">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="#" class="search__link">Найти гостиницу</a>
     </section>
+
     <section class="driving">
       <h2 class="visually-hidden">Наше местоположение</h2>
       <div class="driving__map"></div>
     </section>
   </main>
+
   <footer class="page-footer">
     <ul class="page-footer__list">
       <li class="page-footer__item page-footer__item--hashtag">#visitsedona</li>
-      <li class="page-footer__item page-footer__item--sosial">
+      <li class="page-footer__item page-footer__item--social">
         <a href="https://twitter.com/" class="page-footer__link page-footer__link--tw" target="_blank">Twitter</a>
         <a href="https://ru-ru.facebook.com/" class="page-footer__link page-footer__link--fb" target="_blank" >Facebook</a>
-        <a href="https://www.youtube.com/" class="page-footer__link page-footer__link--ut" target="_blank">Youtobe</a>
+        <a href="https://www.youtube.com/" class="page-footer__link page-footer__link--ut" target="_blank">Youtube</a>
       </li>
       <li class="page-footer__item page-footer__item--copyright">Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTLAcademy</a>
