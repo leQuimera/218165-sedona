@@ -10,7 +10,7 @@
     <!-- Навигация по сайту -->
     <nav class="page-nav">
       <button class="page-nav__toggle" type="button">Открыть меню</button>
-      <ul class="page-nav">
+      <ul class="page-nav__list">
         <li class="page-nav__item"><a class="page-nav__link page-nav__link--active">Главная</a></li>
         <li class="page-nav__item"><a href="photo.html" class="page-nav__link">Фото и видео</a></li>
         <li class="page-nav__item"><a href="form.html" class="page-nav__link">Форма отзыва</a></li>
@@ -21,75 +21,85 @@
     <!-- Блок с картинкой  -->
     <div class="page-header__promo">
       <h1 class="page-header__title visually-hidden">Добро пожаловать в Седону</h1>
-      <a href="#" class="page-header__link"><img src="http://placehold.it/102x83" alt="Город Седона"></a>
-      <img src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
+      <a href="#" class="page-header__logo">
+        <img src="http://placehold.it/102x83" alt="Город Седона">
+      </a>
+      <!-- тут вставляется картинка-надпись, которая или "Седона", или большая многострочная надпись. В зависимости от разрешения. Не знаю,к ак ее лучше назвать -->
+      <div class="page-header__desc">
+        <img src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
+      </div>
     </div>
     <!-- //Блок с картинкой  -->
   </header>
 
   <main class="page-main">
-    <section class="features">
-      <h2 class="features__title visually-hidden">Седона - супер-город</h2>
-      <p class="features__subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="features__lead">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
+    <section class="reasons">
+      <div class="reasons__inner">
+        <h2 class="reasons__title visually-hidden">Седона - супер-город</h2>
+        <p class="reasons__subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="reasons__lead">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
+      </div>
       <!-- Список причин  -->
-      <ol class="features__list">
-        <!-- Приччина #1  -->
-        <li class="features__item feature">
-          <div class="feature__description">
-            <h3 class="feature__title">Настоящий городок</h3>
-            <span>&#8470;1</span>
-            <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <ol class="reasons__list">
+        <!-- Причина #1  -->
+        <li class="reasons__item reason">
+          <div class="reason__description">
+            <h3 class="reason__title">Настоящий городок</h3>
+            <span class="reason__num">&#8470;1</span>
+            <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="feature__img">
+          <div class="reason__img">
             <img src="http://placehold.it/320x260" alt="Настоящий городок">
           </div>
-          <ul class="feature__list">
-            <li class="feature__item feature__item--home">
-              <h4 class="feature__subtitle">Жилье</h4>
-              <p class="feature__remarque">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <ul class="reason__list features">
+            <li class="features__item features__item--house">
+              <h4 class="features__title">Жилье</h4>
+              <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="feature__item feature__suvenir">
-              <h4 class="feature__subtitle">Сувениры</h4>
-              <p class="feature__remarque">Не только китайского, но и местного производства!</p>
+            <li class="features__item features__item--souvenir">
+              <h4 class="features__title">Сувениры</h4>
+              <p class="features__text">Не только китайского, но и местного производства!</p>
             </li>
-            <li class="feature__item feature__item--meal">
-              <h4 class="feature__subtitle">Еда</h4>
-              <p class="feature__remarque">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="features__item features__item--meal">
+              <h4 class="features__title">Еда</h4>
+              <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </li>
-        <!-- //Приччина #1  -->
-        <!-- Приччина #2  -->
-        <li class="features__item feature">
-          <div class="feature__description">
-            <h3 class="feature__title">Там есть мост дьявола</h3>
-            <span>&#8470;2</span>
-            <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <!-- //Причина #1  -->
+        <!-- Причина #2  -->
+        <li class="reasons__item reason">
+          <div class="reason__description">
+            <h3 class="reason__title">Там есть мост дьявола</h3>
+            <span class="reason__num">&#8470;2</span>
+            <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <div class="feature__img">
+          <div class="reason__img">
             <img src="http://placehold.it/320x260" alt="Мост дьявола">
           </div>
         </li>
-        <!-- //Приччина #2  -->
-        <!-- Приччина #3  -->
-        <li class="features__item feature">
-          <h3 class="feature__title">Небольшая площадь</h3>
-          <p class="feature__text">Все интересные места находятся очень близко</p>
+        <!-- //Причина #2  -->
+        <!-- Причина #3  -->
+        <li class="reasons__item reason">
+          <h3 class="reason__title">Небольшая площадь</h3>
+          <span class="reason__num">&#8470;3</span>
+          <p class="reason__text">Все интересные места находятся очень близко</p>
         </li>
-        <!-- //Приччина #3  -->
-        <!-- Приччина #4  -->
-        <li class="features__item feature">
-          <h3 class="feature__title">Красивая дорога</h3>
-          <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+        <!-- //Причина #3  -->
+        <!-- Причина #4  -->
+        <li class="reasons__item reason">
+          <h3 class="reason__title">Красивая дорога</h3>
+          <span class="reason__num">&#8470;4</span>
+          <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </li>
-        <!-- //Приччина #4  -->
-        <!-- Приччина #5  -->
-        <li class="features__item feature">
-          <h3 class="feature__title">Мало туристов</h3>
-          <p class="feature__text">Большинство едет в Гран Каньон и толпиться там</p>
+        <!-- //Причина #4  -->
+        <!-- Причина #5  -->
+        <li class="reasons__item reason">
+          <h3 class="reason__title">Мало туристов</h3>
+          <span class="reason__num">&#8470;5</span>
+          <p class="reason__text">Большинство едет в Гран Каньон и толпиться там</p>
         </li>
-        <!-- Приччина #5  -->
+        <!-- Причина #5  -->
       </ol>
       <!-- //Список причин  -->
     </section>
