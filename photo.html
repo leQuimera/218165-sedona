@@ -4,77 +4,92 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-<body class="page-wrapper">
+
+<body class="page">
   <header class="page-header">
+    <!-- Навигация по сайту -->
     <nav class="page-nav">
       <button class="page-nav__toggle" type="button">Открыть меню</button>
-      <ul page-nav>
+      <ul class="page-nav__list">
         <li class="page-nav__item"><a href="index.html" class="page-nav__link">Главная</a></li>
         <li class="page-nav__item"><a class="page-nav__link page-nav__link--active">Фото и видео</a></li>
         <li class="page-nav__item"><a href="form.html" class="page-nav__link">Форма отзыва</a></li>
         <li class="page-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="page-nav__link">HTML Academy</a></li>
       </ul>
     </nav>
+    <!-- //Навигация по сайту  -->
+    <!-- Блок с картинкой  -->
     <div class="page-header__promo">
       <h1 class="page-header__title visually-hidden">Добро пожаловать в Седону</h1>
-      <a href="#" class="page-header__link"><img src="http://placehold.it/102x83" alt="Город Седона"></a>
-      <img src="http://placehold.it/320x190" alt="Добро пожаловать в Седону">
+      <a href="index.html" class="page-header__logo">
+        <img src="http://placehold.it/102x83" alt="Город Седона">
+      </a>
+      <div class="page-header__desc">
+        <img src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
+      </div>
     </div>
+    <!-- //Блок с картинкой  -->
   </header>
-  <main class="page-body page-body__photo">
-    <section class="page-caption">
-      <h2 class="page-caption__title">Фото и видео</h2>
-      <p class="page-caption__lead">Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
-    </section>
+
+  <main class="page-main">
     <section class="gallery">
-      <h2 class="visually-hidden">Фотогаллерея</h2>
+      <div class="gallery__inner">
+        <h2 class="gallery__title">Фото и видео</h2>
+        <p class="gallery__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+
+      <!-- Галерея фотографий -->
       <ul class="gallery__list">
+        <!-- Фото №1 -->
         <li class="gallery__item">
           <a href="#" class="gallery__link">
             <img src="http://placehold.it/280x280" alt="Неродные просторы">
           </a>
           <h3 class="gallery__title">Неродные просторы</h3>
-          <p>Автор фото: Борис</p>
-          <div class="gallery__like">
-            <button class="gallery__btn" type="button" title="Like">Нравится</button>
-            <span>1350</span>
-          </div>
+          <p class="gallery__author">Автор фото: Борис</p>
+          <button class="gallery__btn" type="button" title="Мне нравится">1350</button>
         </li>
+        <!-- //Фото №1 -->
+        <!-- Фото №2 -->
         <li class="gallery__item">
-          <a href="#" class="gallery__link"
+          <a href="#" class="gallery__link">
             <img src="http://placehold.it/280x280" alt="Местная растительность">
           </a>
           <h3 class="gallery__title">Местная растительность</h3>
-          <p>Автор фото: Сергей</p>
+          <p class="gallery__author">Автор фото: Сергей</p>
           <div class="gallery__like">
-            <button class="gallery__btn" type="button" title="Like">Нравится</button>
-            <span>143</span>
+            <button class="gallery__btn" type="button" title="Мне нравится">143</button>
           </div>
         </li>
+        <!-- //Фото №2 -->
+        <!-- Фото №3 -->
         <li class="gallery__item">
-          <a href="#" class="gallery__link"
+          <a href="#" class="gallery__link">
             <img src="http://placehold.it/280x280" alt="Дорога на север">
           </a>
           <h3 class="gallery__title">Дорога на север</h3>
-          <p>Автор фото: Петр</p>
+          <p class="gallery__author">Автор фото: Петр</p>
           <div class="gallery__like">
-            <button class="gallery__btn" type="button" title="Like">Нравится</button>
-            <span>96</span>
+            <button class="gallery__btn" type="button" title="Мне нравится">96</button>
           </div>
         </li>
+        <!-- //Фото №3 -->
+        <!-- Фото №4 -->
         <li class="gallery__item">
-          <a href="#" class="gallery__link"
+          <a href="#" class="gallery__link">
             <img src="http://placehold.it/280x280" alt="Мост дьявола">
           </a>
           <h3 class="gallery__title">Мост дьявола</h3>
-          <p>Автор фото: Антон</p>
+          <p class="gallery__author">Автор фото: Антон</p>
           <div class="gallery__like">
-            <button class="gallery__btn" type="button" title="Like">Нравится</button>
-            <span>254</span>
+            <button class="gallery__btn" type="button" title="Мне нравится">254</button>
           </div>
         </li>
+        <!-- //Фото №4 -->
       </ul>
+      <!-- //Галерея фотографий -->
     </section>
+
     <section class="video">
       <h2 class="visually-hidden">Видео</h2>
       <p class="video__subtitle">Все еще сомневаетесь?</p>
@@ -92,13 +107,14 @@
       </div>
     </section>
   </main>
+
   <footer class="page-footer">
     <ul class="page-footer__list">
       <li class="page-footer__item page-footer__item--hashtag">#visitsedona</li>
-      <li class="page-footer__item page-footer__item--sosial">
+      <li class="page-footer__item page-footer__item--social">
         <a href="https://twitter.com/" class="page-footer__link page-footer__link--tw" target="_blank">Twitter</a>
         <a href="https://ru-ru.facebook.com/" class="page-footer__link page-footer__link--fb" target="_blank" >Facebook</a>
-        <a href="https://www.youtube.com/" class="page-footer__link page-footer__link--ut" target="_blank">Youtobe</a>
+        <a href="https://www.youtube.com/" class="page-footer__link page-footer__link--ut" target="_blank">Youtube</a>
       </li>
       <li class="page-footer__item page-footer__item--copyright">Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTLAcademy</a>
