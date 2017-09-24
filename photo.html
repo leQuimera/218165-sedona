@@ -32,66 +32,67 @@
   </header>
 
   <main class="page-main">
+    <header class="main-header">
+      <h2 class="main-header__title">Фото и видео</h2>
+      <p class="main-header__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </header>
+    <!-- Галерея фотографий -->
     <section class="gallery">
-      <div class="gallery__inner">
-        <h2 class="gallery__title">Фото и видео</h2>
-        <p class="gallery__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </div>
-
-      <!-- Галерея фотографий -->
-      <ul class="gallery__list">
-        <!-- Фото №1 -->
-        <li class="gallery__item">
-          <a href="#" class="gallery__link">
-            <img src="http://placehold.it/280x280" alt="Неродные просторы">
-          </a>
-          <h3 class="gallery__title">Неродные просторы</h3>
-          <p class="gallery__author">Автор фото: Борис</p>
-          <button class="gallery__btn" type="button" title="Мне нравится">1350</button>
-        </li>
-        <!-- //Фото №1 -->
-        <!-- Фото №2 -->
-        <li class="gallery__item">
-          <a href="#" class="gallery__link">
-            <img src="http://placehold.it/280x280" alt="Местная растительность">
-          </a>
-          <h3 class="gallery__title">Местная растительность</h3>
-          <p class="gallery__author">Автор фото: Сергей</p>
-          <div class="gallery__like">
-            <button class="gallery__btn" type="button" title="Мне нравится">143</button>
-          </div>
-        </li>
-        <!-- //Фото №2 -->
-        <!-- Фото №3 -->
-        <li class="gallery__item">
-          <a href="#" class="gallery__link">
-            <img src="http://placehold.it/280x280" alt="Дорога на север">
-          </a>
-          <h3 class="gallery__title">Дорога на север</h3>
-          <p class="gallery__author">Автор фото: Петр</p>
-          <div class="gallery__like">
-            <button class="gallery__btn" type="button" title="Мне нравится">96</button>
-          </div>
-        </li>
-        <!-- //Фото №3 -->
-        <!-- Фото №4 -->
-        <li class="gallery__item">
-          <a href="#" class="gallery__link">
-            <img src="http://placehold.it/280x280" alt="Мост дьявола">
-          </a>
-          <h3 class="gallery__title">Мост дьявола</h3>
-          <p class="gallery__author">Автор фото: Антон</p>
-          <div class="gallery__like">
-            <button class="gallery__btn" type="button" title="Мне нравится">254</button>
-          </div>
-        </li>
-        <!-- //Фото №4 -->
-      </ul>
-      <!-- //Галерея фотографий -->
+      <h3 class="visually-hidden">Фотографии</h3>
+      <!-- Фото №1 -->
+      <article class="gallery__item post">
+        <a href="#" class="post__link">
+          <img src="http://placehold.it/280x280" alt="Неродные просторы">
+        </a>
+        <div class="post__info">
+          <h4 class="post__title">Неродные просторы</h4>
+          <p class="post__author">Автор фото: Борис</p>
+          <button class="post__btn" type="button" title="Мне нравится">1350</button>
+        </div>
+      </article>
+      <!-- //Фото №1 -->
+      <!-- Фото №2 -->
+      <article class="gallery__item post">
+        <a href="#" class="post__link">
+          <img src="http://placehold.it/280x280" alt="Местная растительность">
+        </a>
+        <div class="post__info">
+          <h4 class="post__title">Местная растительность</h4>
+          <p class="post__author">Автор фото: Сергей</p>
+          <button class="post__btn" type="button" title="Мне нравится">143</button>
+        </div>
+      </article>
+      <!-- //Фото №2 -->
+      <!-- Фото №3 -->
+      <article class="gallery__item post">
+        <a href="#" class="post__link">
+          <img src="http://placehold.it/280x280" alt="Дорога на север">
+        </a>
+        <div class="post__info">
+          <h4 class="post__title">Дорога на север</h4>
+          <p class="post__author">Автор фото: Петр</p>
+          <button class="post__btn" type="button" title="Мне нравится">96</button>
+        </div>
+      </article>
+      <!-- //Фото №3 -->
+      <!-- Фото №4 -->
+      <article class="gallery__item post">
+        <a href="#" class="post__link">
+          <img src="http://placehold.it/280x280" alt="Мост дьявола">
+        </a>
+        <div class="post__info">
+          <h4 class="post__title">Мост дьявола</h4>
+          <p class="post__author">Автор фото: Антон</p>
+          <button class="post__btn" type="button" title="Мне нравится">254</button>
+        </div>
+      </article>
+      <!-- //Фото №4 -->
     </section>
+    <!-- //Галерея фотографий -->
 
+    <!-- Видео -->
     <section class="video">
-      <h2 class="visually-hidden">Видео</h2>
+      <h3 class="visually-hidden">Видео</h3>
       <p class="video__subtitle">Все еще сомневаетесь?</p>
       <p class="video__lead">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video__content">
@@ -106,6 +107,7 @@
         </div>
       </div>
     </section>
+    <!-- Видео -->
   </main>
 
   <footer class="page-footer">
@@ -117,7 +119,7 @@
         <a href="https://www.youtube.com/" class="page-footer__link page-footer__link--ut" target="_blank">Youtube</a>
       </li>
       <li class="page-footer__item page-footer__item--copyright">Разработано
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTLAcademy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__cr-link" target="_blank">HTLAcademy</a>
       </li>
     </ul>
   </footer>
