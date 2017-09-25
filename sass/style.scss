@@ -1,1 +1,5 @@
-body { background: red; }
+@import "global/normalize.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+
+@import "blocks/page.scss";
