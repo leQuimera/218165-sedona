@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<body class="page">
+  <header class="page-header">
+    <!-- Навигация по сайту -->
+    <nav class="page-nav">
+      <button class="page-nav__toggle" type="button">Открыть меню</button>
+      <ul class="page-nav__list">
+        <li class="page-nav__item"><a class="page-nav__link page-nav__link--active">Главная</a></li>
+        <li class="page-nav__item"><a href="photo.html" class="page-nav__link">Фото и видео</a></li>
+        <li class="page-nav__item"><a href="form.html" class="page-nav__link">Форма отзыва</a></li>
+        <li class="page-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="page-nav__link">HTML Academy</a></li>
+      </ul>
+    </nav>
+    <!-- //Навигация по сайту  -->
+    <!-- Блок с картинкой  -->
+    <div class="page-header__promo">
+      <h1 class="page-header__title visually-hidden">Добро пожаловать в Седону</h1>
+      <a class="page-header__logo">
+        <img src="http://placehold.it/102x83" alt="Город Седона">
+      </a>
+      <div class="page-header__desc">
+        <img src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
+      </div>
+    </div>
+    <!-- //Блок с картинкой  -->
+  </header>
 
-  </body>
+  <main class="page-main">
+    <section class="reasons">
+      <div class="reasons__inner">
+        <h2 class="reasons__title visually-hidden">Седона - супер-город</h2>
+        <p class="reasons__subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="reasons__lead">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон.</p>
+      </div>
+
+      <!-- Список причин  -->
+      <ol class="reasons__list">
+        <!-- Причина #1  -->
+        <li class="reasons__item reason">
+          <div class="reason__description">
+            <h3 class="reason__title">Настоящий городок</h3>
+            <span class="reason__num">&#8470;1</span>
+            <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="reason__img">
+            <img src="http://placehold.it/320x260" alt="Настоящий городок">
+          </div>
+          <ul class="reason__list features">
+            <li class="features__item features__item--house">
+              <h4 class="features__title">Жилье</h4>
+              <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="features__item features__item--souvenir">
+              <h4 class="features__title">Сувениры</h4>
+              <p class="features__text">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="features__item features__item--meal">
+              <h4 class="features__title">Еда</h4>
+              <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </li>
+        <!-- //Причина #1  -->
+        <!-- Причина #2  -->
+        <li class="reasons__item reason">
+          <div class="reason__description">
+            <h3 class="reason__title">Там есть мост дьявола</h3>
+            <span class="reason__num">&#8470;2</span>
+            <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <div class="reason__img">
+            <img src="http://placehold.it/320x260" alt="Мост дьявола">
+          </div>
+        </li>
+        <!-- //Причина #2  -->
+        <!-- Причина #3  -->
+        <li class="reasons__item reason">
+          <h3 class="reason__title">Небольшая площадь</h3>
+          <span class="reason__num">&#8470;3</span>
+          <p class="reason__text">Все интересные места находятся очень близко</p>
+        </li>
+        <!-- //Причина #3  -->
+        <!-- Причина #4  -->
+        <li class="reasons__item reason">
+          <h3 class="reason__title">Красивая дорога</h3>
+          <span class="reason__num">&#8470;4</span>
+          <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+        </li>
+        <!-- //Причина #4  -->
+        <!-- Причина #5  -->
+        <li class="reasons__item reason">
+          <h3 class="reason__title">Мало туристов</h3>
+          <span class="reason__num">&#8470;5</span>
+          <p class="reason__text">Большинство едет в Гран Каньон и толпиться там</p>
+        </li>
+        <!-- Причина #5  -->
+      </ol>
+      <!-- //Список причин  -->
+    </section>
+
+    <section class="search">
+      <h2 class="visually-hidden">Поиск жилья</h2>
+      <p class="search__subtitle">Заинтересовались?</p>
+      <p class="search__lead">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a href="#" class="search__link">Найти гостиницу</a>
+    </section>
+
+    <section class="driving">
+      <h2 class="visually-hidden">Наше местоположение</h2>
+      <div class="driving__map"></div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="page-footer__hashtag">#visitsedona</p>
+    <section class="page-footer__social socials">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">Twitter</a>
+      <a href="https://ru-ru.facebook.com/" class="socials__link socials__link--fb" target="_blank" >Facebook</a>
+      <a href="https://www.youtube.com/" class="socials__link socials__link--ut" target="_blank">Youtube</a>
+    </section>
+    <div class="page-footer__copyright">Разработано
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" target="_blank">HTLAcademy</a>
+    </div>
+  </footer>
+</body>
 </html>

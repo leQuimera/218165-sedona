@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page">
+  <header class="page-header">
+    <!-- Навигация по сайту -->
+    <nav class="page-nav">
+      <button class="page-nav__toggle" type="button">Открыть меню</button>
+      <ul class="page-nav__list">
+        <li class="page-nav__item"><a href="index.html" class="page-nav__link">Главная</a></li>
+        <li class="page-nav__item"><a href="photo.html" class="page-nav__link">Фото и видео</a></li>
+        <li class="page-nav__item"><a class="page-nav__link page-nav__link--active">Форма отзыва</a></li>
+        <li class="page-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="page-nav__link">HTML Academy</a></li>
+      </ul>
+    </nav>
+    <!-- //Навигация по сайту  -->
+    <!-- Блок с картинкой  -->
+    <div class="page-header__promo">
+      <h1 class="page-header__title visually-hidden">Добро пожаловать в Седону</h1>
+      <a href="index.html" class="page-header__logo">
+        <img src="http://placehold.it/102x83" alt="Город Седона">
+      </a>
+      <div class="page-header__desc">
+        <img src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
+      </div>
+    </div>
+    <!-- //Блок с картинкой  -->
+  </header>
+
+  <main class="page-main">
+    <form class="report" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="report__title">Оставьте свой отзыв</h2>
+      <p class="report__lead">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+      <!-- Блок личной информации ревьювера-->
+      <!-- Текстовые поля -->
+      <fieldset class="report__reviewer">
+        <legend class="report__title">Представьтесь:</legend>
+        <ul class="report__list report__list--reviewer">
+          <li class="report__item">
+            <label class="report__label" for="firstname">Имя<sup>*</sup>: </label>
+            <input class="report__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
+          </li>
+          <li class="report__item">
+            <label class="report__label" for="lastname">Фамилия<sup>*</sup>: </label>
+            <input class="report__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
+          </li>
+          <li class="report__item">
+            <label class="report__label" for="middlename">Отчество: </label>
+            <input class="report__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
+          </li>
+        </ul>
+      </fieldset>
+      <!-- //Блок личной информации ревьювера-->
+
+      <!-- Блок контактной информации ревьювера-->
+      <!-- Текстовые поля -->
+      <fieldset class="report__contacts">
+        <legend class="report__title">Контактная информация:</legend>
+        <ul class="report__list report__list--contacts">
+          <li class="report__item">
+            <label class="report__label" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
+            <input class="report__input report__input--tel" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
+          </li>
+          <li class="report__item">
+            <label class="report__label" for="email">Электронная почта<sup>*</sup>: </label>
+            <input class="report__input report__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- //Блок контактной информации ревьювера-->
+
+      <!-- Блок впечатления ревьювера -->
+      <!-- Выбор радио-батон -->
+      <fieldset class="report__impression">
+        <legend class="report__title">Ваше общее впечатление:</legend>
+        <ul class="report__list report__list--impression">
+          <li class="report__item">
+            <input class="report__radio" type="radio" name="impression10" id="impression10" value="10" checked>
+            <label class="report__label" for="impression10">Скорее положительное</label>
+          </li>
+          <li class="report__item">
+            <input class="report__radio" type="radio" name="impression0" id="impression0" value="0">
+            <label class="report__label" for="impressions0">Скорее отрицательное</label>
+          </li>
+          <li class="report__item">
+            <input class="report__radio" type="radio" name="impression5" id="impression5" value="5">
+            <label class="report__label" for="impression5">Затрудняюсь ответить</label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- //Блок впечатления ревьювера -->
+
+      <!-- Блок мест, посещенных ревьювером -->
+      <!-- Выбор чек-боксы -->
+      <fieldset class="report__visited">
+        <legend class="report__title">Посещенные достопримечательности:</legend>
+        <ul class="report__list report__list--visited">
+          <li class="report__item">
+            <input class="report__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked>
+            <label class="report__label" for="visit1">Мост Дьявола</label>
+          </li>
+          <li class="report__item">
+            <input class="report__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked>
+            <label class="report__label" for="visit2">Слайд-парк</label>
+          </li>
+          <li class="report__item">
+            <input class="report__check" type="checkbox" name="visited" value="Гора-Колокол" id="visit3" checked>
+            <label class="report__label" for="visit3">Гора-Колокол</label>
+          </li>
+          <li class="report__item">
+            <input class="report__check" type="checkbox" name="visited" value="Красные скалы" id="visit4">
+            <label class="report__label" for="visit4">Красные скалы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- //Блок мест, посещенных ревьювером -->
+
+      <!-- Отзыв ревьювером -->
+      <!-- Текстовое поле -->
+      <fieldset class="report__effect">
+        <legend class="report__title">Опишите свои эмоции:</legend>
+        <textarea name="effect" class="report__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+      <!-- //Отзыв ревьювером -->
+
+      <button class="report__btn" type="submit">Отправить отзыв</button>
+      <p class="report__legend">* - обязательные поля</p>
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <p class="page-footer__hashtag">#visitsedona</p>
+    <section class="page-footer__social socials">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">Twitter</a>
+      <a href="https://ru-ru.facebook.com/" class="socials__link socials__link--fb" target="_blank" >Facebook</a>
+      <a href="https://www.youtube.com/" class="socials__link socials__link--ut" target="_blank">Youtube</a>
+    </section>
+    <div class="page-footer__copyright">Разработано
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" target="_blank">HTLAcademy</a>
+    </div>
+  </footer>
+
+  <!-- Модальное окно: ошибка -->
+  <div class="modal" id="js-modal-error">
+    <h2 class="modal__title">Что-то пошло не так!</h2>
+    <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <button class="modal__btn" type="button">Ok</button>
+  </div>
+  <!-- //Модальное окно: ошибка -->
+
+  <!-- Модальное окно: отправка отзыва -->
+  <div class="modal" id="js-modal-sended">
+    <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+    <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <button class="modal__btn" type="button">Закрыть окно</button>
+  </div>
+  <!-- //Модальное окно: отправка отзыва -->
+
+</body>
+</html>
