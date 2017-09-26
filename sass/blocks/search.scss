@@ -1,0 +1,59 @@
+.search {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.search__subtitle {
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: -4px;
+  padding-left: 10px;
+  margin-bottom: 18px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 26px;
+  color: $font_header_bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.search__lead {
+  margin-bottom: 34px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $font_header_bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.search__link {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 55px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid $border_dark;
+  border-top: 1px solid $border_light;
+  background-color: $bg_color_blue;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $font_header_light;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $bg_color_blue_hover;
+  }
+  &:active {
+    color: $font_header_light_active;
+    background-color: $bg_color_blue_active;
+  }
+}

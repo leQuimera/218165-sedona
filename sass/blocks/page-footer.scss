@@ -1,0 +1,24 @@
+.page-footer {
+  width: 100%;
+  text-align: center;
+}
+
+.page-footer__hashtag {
+  margin-bottom: 37px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $font_header_bold;
+  text-transform: uppercase;
+}
+
+.page-footer__copyright {
+  padding-right: 40px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $font_header_bold;
+  text-transform: uppercase;
+}
