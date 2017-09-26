@@ -1,0 +1,41 @@
+.reason {
+  width: 100%;
+  background-color: $bg_color_blue;
+}
+
+.reason__description {
+  padding-top: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reason__title {
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 10px;
+  color: $font_header_light;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.reason__num,
+.reason__text {
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $font_header_light;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.reason__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: $bg_color_white;
+}

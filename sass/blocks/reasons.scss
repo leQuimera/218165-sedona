@@ -1,0 +1,35 @@
+.reasons__inner {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.reasons__title {
+  padding: 0 10px;
+  margin-bottom: 26px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: $font_header_bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.reasons__lead {
+  margin-bottom: 25px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $font_header_bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.reasons__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

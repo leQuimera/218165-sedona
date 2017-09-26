@@ -1,5 +1,6 @@
 .page-header {
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .page-nav {
@@ -68,10 +69,6 @@
   width: 100%;
   min-height: 390px;
   background-color: $bg_color_white;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
   text-align: center;
 }
 
@@ -83,5 +80,8 @@
 }
 
 .page-header__desc {
-  padding-top: 1px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
