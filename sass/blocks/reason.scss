@@ -3,7 +3,7 @@
 }
 
 .reason__description {
-  padding-top: 13px;
+  padding-top: 12px;
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 19px;
@@ -11,10 +11,9 @@
   flex-direction: column;
   justify-content: center;
   background-color: $bg_color_grey;
-  color: $font_header_bold;
   text-align: center;
 
-  &--blue {
+  &--bg {
     padding-top: 27px;
     padding-left: 20px;
     padding-right: 20px;
@@ -25,28 +24,14 @@
 }
 
 .reason__title {
-  font-family: "PTSans", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 10px;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
 }
 
-.reason__num,
-.reason__text {
-  font-family: "PTSans", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
 .reason__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include clear-list();
 }
 
 .reason__img {

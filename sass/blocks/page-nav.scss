@@ -16,10 +16,8 @@
 }
 
 .page-nav__list {
+  @include clear-list();
   width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   background-color: $bg_color_blue;
 }
 
@@ -33,12 +31,10 @@
   border-bottom: 1px solid $border_dark;
   border-top: 1px solid $border_light;
   background-color: $bg_color_blue;
-  font-family: "PTSans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
   color: $font_header_light;
-  text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
@@ -51,6 +47,8 @@
   }
 
   &--active {
+    // Оставила, потому что если убрать, то курсор при наведении меняется
+    // на курсов-вставку текста. Что выглядит не очень, как мне кажется.
     cursor: default;
 
     &:hover,

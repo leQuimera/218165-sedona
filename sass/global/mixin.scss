@@ -1,0 +1,29 @@
+@mixin clear-list() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin btn() {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 58px;
+  padding-top: 15px;
+  padding-bottom: 7px;
+  background-color: $bg_color_blue;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $font_header_light;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $bg_color_blue_hover;
+  }
+
+  &:active {
+    color: $font_header_light_active;
+    background-color: $bg_color_blue_active;
+  }
+}
