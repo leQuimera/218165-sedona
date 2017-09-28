@@ -33,11 +33,12 @@
 }
 
 .page-header__img {
-   width: 280px;
-   height: 390px;
-   &--inner {
+  width: 280px;
+  height: 390px;
+
+  &--inner {
     padding-bottom: 12px;
     width: 230px;
     height: 140px;
-   }
+  }
 }
