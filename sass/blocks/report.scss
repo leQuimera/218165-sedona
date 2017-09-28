@@ -4,11 +4,55 @@
 }
 
 .report__title {
+  margin: 0 auto;
+  margin-bottom: 14px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
 
 .report__fieldset {
+  padding: 0;
   border: none;
+}
+
+.report__list {
+  @include clear-list();
+
+  &--reviewer {
+    margin-bottom: 33px;
+  }
+}
+
+.report__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+
+  &--contacts {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.report__label {
+  display: block;
+  padding-right: 13px;
+  line-height: 26px;
+  white-space: nowrap;
+}
+
+.report__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: $bg_color_grey;
+  border: none;
+  outline: none;
 }

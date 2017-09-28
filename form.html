@@ -35,7 +35,7 @@
   <main class="page-main">
     <header class="page-main__header">
       <h2 class="page-main__title">Оставьте свой отзыв</h2>
-      <p class="page-main__lead">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <p class="page-main__lead page-main__lead--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </header>
 
     <form class="report" action="https://echo.htmlacademy.ru/" method="post">
@@ -65,11 +65,11 @@
       <fieldset class="report__fieldset report__fieldset--contacts">
         <legend class="report__title">Контактная информация:</legend>
         <ul class="report__list report__list--contacts">
-          <li class="report__item">
+          <li class="report__item report__item--contacts">
             <label class="report__label" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
             <input class="report__input report__input--tel" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
           </li>
-          <li class="report__item">
+          <li class="report__item  report__item--contacts">
             <label class="report__label" for="email">Электронная почта<sup>*</sup>: </label>
             <input class="report__input report__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
           </li>
