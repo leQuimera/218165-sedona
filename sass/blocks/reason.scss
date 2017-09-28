@@ -1,12 +1,15 @@
 .reason {
   width: 100%;
+  &:nth-child(1) {
+    margin-bottom: 40px;
+  }
 }
 
 .reason__description {
-  padding-top: 12px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 19px;
+  padding-top: 18px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-bottom: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +38,8 @@
 }
 
 .reason__img {
-  width: 100%;
-  height: auto;
+  width: 320px;
+  height: 260px;
+  background-color: $bg_color_white;
+  overflow: hidden;
 }

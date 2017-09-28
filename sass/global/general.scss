@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid green;
+}
+
 body {
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: 400;
@@ -7,6 +11,12 @@ body {
   background-color: $bg_color_white;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+img {
+    border-style: none;
+    width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
