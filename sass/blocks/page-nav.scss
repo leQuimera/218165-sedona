@@ -5,20 +5,32 @@
 
 .page-nav__toggle {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   top: 16px;
   right: 20px;
-  background-color: $bg_color_white;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22.199px' height='22.199px' viewBox='0 0 22.199 22.199' enable-background='new 0 0 22.199 22.199' xml:space='preserve'%3E%3Cpolygon fill='%23ffffff' points='22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 '/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
   border: none;
-  z-index: 10;
+  z-index: 105;
   cursor: pointer;
+
+  &--closed {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22.928px' height='21.982px' viewBox='0 0 22.928 21.982' enable-background='new 0 0 22.928 21.982' xml:space='preserve'%3E%3Cg fill='%2381b3d2'%3E%3Crect width='22.928' height='3.964'/%3E%3Crect y='9.009' width='22.928' height='3.964'/%3E%3Crect y='18.018' width='22.928' height='3.964'/%3E%3C/g%3E%3C/svg%3E");
+  }
 }
 
 .page-nav__list {
   @include clear-list();
+  display: block;
   width: 100%;
   background-color: $bg_color_blue;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .page-nav__link {

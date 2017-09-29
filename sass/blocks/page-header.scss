@@ -15,26 +15,41 @@
   position: absolute;
   top: 0;
   left: 110px;
+  z-index: 10;
 }
 
-.page-header__desc {
-  margin-bottom: 33px;
+.page-header__slogan {
+  position: relative;
+  margin-bottom: 37px;
+  background-position: -241px -193px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -232px -4px;
-  background-color: $bg_color_white;
-  background-size: cover;
+  background-size: auto;
 
-  &--inner {
-    margin-bottom: 37px;
-    background-size: inherit;
-    background-position: -241px -193px;
+  &--general {
+    margin-bottom: 35px;
+    background-position: -228px -4px;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 321px;
+    height: 30px;
+    bottom: 4px;
+    left: 0px;
+    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
   }
 }
 
 .page-header__img {
+  padding-top: 3px;
   width: 280px;
-  height: 390px;
+  height: 384px;
 
   &--inner {
     padding-bottom: 12px;

@@ -7,12 +7,20 @@
 
 .socials__link {
   display: block;
+  box-sizing: border-box;
   width: 47px;
   height: 47px;
+  padding-top: 12px;
   margin-right: 6px;
   background-color: $bg_color_blue;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.socials__ico {
+  fill: $font_header_light;
+  text-align: center;
+  vertical-align: middle;
 }
