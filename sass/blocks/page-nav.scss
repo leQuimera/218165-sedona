@@ -26,7 +26,7 @@
   @include clear-list();
   display: block;
   width: 100%;
-  background-color: $bg_color_blue;
+  background-color: $steelblue;
 
   &--closed {
     display: none;
@@ -40,22 +40,22 @@
   min-height: 55px;
   padding-top: 7px;
   padding-bottom: 7px;
-  border-bottom: 1px solid $border_dark;
-  border-top: 1px solid $border_light;
-  background-color: $bg_color_blue;
+  border-bottom: 1px solid $darkslategray;
+  border-top: 1px solid $lightgray;
+  background-color: $steelblue;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
-  color: $font_header_light;
+  color: $white;
   text-decoration: none;
 
   &:hover {
-    background-color: $bg_color_blue_hover;
+    background-color: $slategrey;
   }
 
   &:active {
-    color: $font_header_light_active;
-    background-color: $bg_color_blue_active;
+    color: $dimgrey;
+    background-color: $cadetblue;
   }
 
   &--active {
@@ -65,8 +65,8 @@
 
     &:hover,
     &:active {
-      color: $font_header_light;
-      background-color: $bg_color_blue;
+      color: $white;
+      background-color: $steelblue;
     }
   }
 }

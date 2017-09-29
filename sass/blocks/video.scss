@@ -28,7 +28,7 @@
   width: 280px;
   height: 45px;
   margin: 0 auto;
-  background-color: $bg_video_in;
+  background-color: $silver;
 
   &::before {
     content: "";
@@ -38,7 +38,7 @@
     top: 20px;
     left: 20px;
     z-index: 1;
-    background-color: $bg_color_white;
+    background-color: $white;
     opacity: 0.3;
   }
 
@@ -49,7 +49,7 @@
     left: 58px;
     width: 10px;
     height: 10px;
-    background-color: $bg_color_white;
+    background-color: $white;
     border-radius: 50%;
     z-index: 5;
   }
@@ -61,7 +61,7 @@
   width: 280px;
   height: 66px;
   margin: 0 auto;
-  background-color: $bg_color_grey;
+  background-color: $grey;
 }
 
 .video__control {

@@ -10,19 +10,19 @@
   width: 280px;
   min-height: 57px;
   padding-top: 14px;
-  background-color: $bg_color_blue;
+  background-color: $steelblue;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color: $font_header_light;
+  color: $white;
   text-decoration: none;
 
   &:hover {
-    background-color: $bg_color_blue_hover;
+    background-color: $slategrey;
   }
 
   &:active {
-    color: $font_header_light_active;
-    background-color: $bg_color_blue_active;
+    color: $dimgrey;
+    background-color: $cadetblue;
   }
 }

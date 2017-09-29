@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $bg_color_grey;
+  background-color: $grey;
   text-align: center;
 
   &--bg {
@@ -22,8 +22,8 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 25px;
-    background-color: $bg_color_blue;
-    color: $font_header_light;
+    background-color: $steelblue;
+    color: $white;
   }
 }
 
@@ -41,6 +41,6 @@
 .reason__img {
   width: 320px;
   height: 260px;
-  background-color: $bg_color_white;
+  background-color: $white;
   overflow: hidden;
 }
