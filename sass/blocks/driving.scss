@@ -3,8 +3,29 @@
 }
 
 .driving__map {
+  position: relative;
   width: 100%;
   min-height: 350px;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+  &::after {
+    top: 50%;
+    left: 50%;
+    width: 19px;
+    height: 19px;
+    background-color: $steelblue;
+  }
 }
