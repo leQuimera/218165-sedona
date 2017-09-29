@@ -13,8 +13,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 49%;
-    left: 49%;
+    top: 46%;
+    left: 46%;
     width: 27px;
     height: 27px;
     border-radius: 50%;
@@ -22,10 +22,10 @@
   }
 
   &::after {
-    top: 50%;
-    left: 50%;
-    width: 19px;
-    height: 19px;
+    top: 47%;
+    left: 48%;
+    width: 17px;
+    height: 17px;
     background-color: $steelblue;
   }
 }

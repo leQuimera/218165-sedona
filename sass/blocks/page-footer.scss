@@ -11,6 +11,25 @@
 }
 
 .page-footer__copyright {
-  padding-right: 40px;
+  display: flex;
+  justify-content: center;
   line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.page-footer__copyright-link {
+  display: block;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  padding-left: 9px;
+  margin-top: -4px;
+}
+
+.page-footer__copyright-icon:hover {
+  fill: $steelblue;
+}
+
+.page-footer__copyright-icon:active {
+  fill: $lightgray;
 }
