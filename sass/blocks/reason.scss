@@ -5,18 +5,17 @@
   &:nth-child(1) {
     margin-bottom: 37px;
   }
+}
 
-  &:nth-child(3)::after,
-  &:nth-child(4)::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 20px;
-    width: 280px;
-    height: 1px;
-    background-color: $steel;
-    z-index: 1;
-  }
+.reason__underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 280px;
+  height: 1px;
+  background-color: $steel;
+  z-index: 1;
 }
 
 .reason__description {

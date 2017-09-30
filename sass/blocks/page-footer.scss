@@ -17,12 +17,15 @@
   letter-spacing: 0.02em;
 }
 
+.page-footer__text {
+  margin-right: 9px;
+}
+
 .page-footer__copyright-link {
   display: block;
   box-sizing: border-box;
   width: 35px;
   height: 35px;
-  padding-left: 9px;
   margin-top: -4px;
 }
 
