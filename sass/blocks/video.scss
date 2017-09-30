@@ -41,18 +41,17 @@
     background-color: $white;
     opacity: 0.3;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 17px;
-    left: 58px;
-    width: 10px;
-    height: 10px;
-    background-color: $white;
-    border-radius: 50%;
-    z-index: 5;
-  }
+.video__drager {
+  position: absolute;
+  top: 17px;
+  left: 58px;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border-radius: 50%;
+  z-index: 5;
 }
 
 .video__panel {
@@ -77,4 +76,16 @@
 .video__control--fullscreen {
   margin-left: 19px;
   margin-right: 17px;
+}
+
+.header-services__icon {
+  fill: $darkgray;
+
+  &:hover {
+    fill: $ghostwhite;
+  }
+
+  &:active {
+    fill: $whitesmoke;
+  }
 }
