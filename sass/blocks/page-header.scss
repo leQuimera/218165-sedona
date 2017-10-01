@@ -1,0 +1,64 @@
+.page-header {
+  width: 100%;
+}
+
+.page-header__promo {
+  position: relative;
+  padding-top: 56px;
+  width: 100%;
+  background-color: $white;
+  text-align: center;
+}
+
+.page-header__logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 110px;
+  z-index: 10;
+}
+
+.page-header__slogan {
+  position: relative;
+  margin-bottom: 37px;
+  background-position: -241px -193px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &--general {
+    margin-bottom: 35px;
+    background-position: -228px -4px;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 321px;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+
+  &--general::after {
+    bottom: 4px;
+  }
+}
+
+.page-header__img {
+  padding-top: 3px;
+  width: 280px;
+  height: 384px;
+
+  &--inner {
+    padding-top: 1px;
+    padding-bottom: 8px;
+    width: 230px;
+    height: 140px;
+  }
+}

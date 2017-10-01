@@ -16,7 +16,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
+    "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp style",
     "start": "gulp serve"
@@ -36,5 +36,9 @@
   ],
   "engines": {
     "node": "8.2"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "npm": "^5.4.2"
   }
 }

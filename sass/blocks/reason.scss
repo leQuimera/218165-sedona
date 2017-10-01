@@ -1,0 +1,100 @@
+.reason {
+  position: relative;
+  width: 100%;
+
+  &:nth-child(1) {
+    margin-bottom: 37px;
+  }
+}
+
+.reason__underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 280px;
+  height: 1px;
+  background-color: $darkgray;
+  z-index: 1;
+}
+
+.reason__title {
+  font-size: 18px;
+  line-height: 10px;
+  color: $black;
+  text-align: center;
+
+  &--bg {
+    color: $white;
+  }
+}
+
+.reason__description {
+  padding-top: 16px;
+  padding-left: 31px;
+  padding-right: 31px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $azure;
+
+  &--bg {
+    padding-top: 31px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 26px;
+    background-color: $steelblue;
+    color: $white;
+  }
+}
+
+.reason__num {
+  position: relative;
+  font-weight: 700;
+  line-height: 21px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 102px;
+    width: 9px;
+    height: 2px;
+    background-color: $dimgray;
+  }
+
+  &::after {
+    top: 9px;
+    left: 146px;
+  }
+
+  &--bg::before,
+  &--bg::after {
+    top: 9px;
+    left: 112px;
+    background-color: $white;
+  }
+
+  &--bg::after {
+    top: 9px;
+    left: 156px;
+  }
+}
+
+.reason__list {
+  @include clear-list();
+}
+
+.reason__img {
+  width: 320px;
+  height: 260px;
+  background-color: $white;
+  overflow: hidden;
+}
+
+.reason__text {
+  line-height: 21px;
+}

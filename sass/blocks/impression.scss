@@ -1,0 +1,86 @@
+.impression {
+  padding-bottom: 22px;
+  border-bottom: 1px solid $steel;
+}
+
+.impression__title {
+  padding-top: 18px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+}
+
+.impression__list {
+  @include clear-list();
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.impression__item {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  min-height: 69px;
+  cursor: pointer;
+}
+
+.impression__label {
+  display: block;
+  position: relative;
+  padding: 16px 0;
+  padding-left: 78px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-transform: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 54px;
+    height: 54px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: $mintcream;
+  }
+
+  &::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    top: 17px;
+    left: 17px;
+    background-color: $dimgray;
+    border-radius: 50%;
+    transition: all 0.2s;
+    opacity: 0;
+  }
+}
+
+.impression__radio {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  opacity: 0;
+
+  &:checked + .impression__label::after {
+    opacity: 1;
+  }
+}
+
+.impression__radio:hover + .impression__label::before,
+.impression__radio:active + .impression__label::before,
+.impression__radio:focus + .impression__label::before {
+  background-color: $steel;
+}

@@ -3,13 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="fb" viewBox="0 0 9 19">
+      <title>fb</title>
+      <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+    </symbol>
+    <symbol id="tw" viewBox="0 0 18 15">
+      <title>tw</title>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+    </symbol>
+    <symbol id="ut" viewBox="0 0 20 14">
+      <title>ut</title>
+      <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+    </symbol>
+    <symbol id="html-logo" viewBox="0 0 27 34">
+      <title>html-logo</title>
+      <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+    </symbol>
+  </svg>
+
   <header class="page-header">
     <!-- Навигация по сайту -->
     <nav class="page-nav">
-      <button class="page-nav__toggle" type="button">Открыть меню</button>
+      <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="page-nav__list">
         <li class="page-nav__item"><a href="index.html" class="page-nav__link">Главная</a></li>
         <li class="page-nav__item"><a href="photo.html" class="page-nav__link">Фото и видео</a></li>
@@ -18,40 +38,43 @@
       </ul>
     </nav>
     <!-- //Навигация по сайту  -->
+
     <!-- Блок с картинкой  -->
     <div class="page-header__promo">
       <h1 class="page-header__title visually-hidden">Добро пожаловать в Седону</h1>
       <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/102x83" alt="Город Седона">
+        <img src="img/logo-sedona-mobile.svg" alt="Город Седона">
       </a>
-      <div class="page-header__desc">
-        <img src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
+      <div class="page-header__slogan">
+        <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону" class="page-header__img page-header__img--inner">
       </div>
     </div>
     <!-- //Блок с картинкой  -->
   </header>
 
   <main class="page-main">
-    <form class="report" action="https://echo.htmlacademy.ru/" method="post">
-      <h2 class="report__title">Оставьте свой отзыв</h2>
-      <p class="report__lead">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <header class="page-main__header">
+      <h2 class="page-main__title">Оставьте свой отзыв</h2>
+      <p class="page-main__lead page-main__lead--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </header>
 
+    <form class="report" action="https://echo.htmlacademy.ru/" method="post">
       <!-- Блок личной информации ревьювера-->
       <!-- Текстовые поля -->
-      <fieldset class="report__reviewer">
-        <legend class="report__title">Представьтесь:</legend>
-        <ul class="report__list report__list--reviewer">
-          <li class="report__item">
-            <label class="report__label" for="firstname">Имя<sup>*</sup>: </label>
-            <input class="report__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
+      <fieldset class="report__fieldset reviewer">
+        <legend class="reviewer__title">Представьтесь:</legend>
+        <ul class="reviewer__list">
+          <li class="reviewer__item">
+            <label class="reviewer__label" for="firstname">Имя<sup>*</sup>: </label>
+            <input class="reviewer__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
           </li>
-          <li class="report__item">
-            <label class="report__label" for="lastname">Фамилия<sup>*</sup>: </label>
-            <input class="report__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
+          <li class="reviewer__item">
+            <label class="reviewer__label" for="lastname">Фамилия<sup>*</sup>: </label>
+            <input class="reviewer__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
           </li>
-          <li class="report__item">
-            <label class="report__label" for="middlename">Отчество: </label>
-            <input class="report__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
+          <li class="reviewer__item">
+            <label class="reviewer__label" for="middlename">Отчество: </label>
+            <input class="reviewer__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
           </li>
         </ul>
       </fieldset>
@@ -59,16 +82,16 @@
 
       <!-- Блок контактной информации ревьювера-->
       <!-- Текстовые поля -->
-      <fieldset class="report__contacts">
-        <legend class="report__title">Контактная информация:</legend>
-        <ul class="report__list report__list--contacts">
-          <li class="report__item">
-            <label class="report__label" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
-            <input class="report__input report__input--tel" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
+      <fieldset class="report__fieldset contacts">
+        <legend class="contacts__title">Контактная информация:</legend>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <label class="contacts__label contacts__label--tel" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
+            <input class="contacts__input" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
           </li>
-          <li class="report__item">
-            <label class="report__label" for="email">Электронная почта<sup>*</sup>: </label>
-            <input class="report__input report__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+          <li class="contacts__item">
+            <label class="contacts__label contacts__label--email" for="email">Электронная почта<sup>*</sup>: </label>
+            <input class="contacts__input" type="email" placeholder="Введите e-mail" name="email" id="email" required>
           </li>
         </ul>
       </fieldset>
@@ -76,20 +99,20 @@
 
       <!-- Блок впечатления ревьювера -->
       <!-- Выбор радио-батон -->
-      <fieldset class="report__impression">
-        <legend class="report__title">Ваше общее впечатление:</legend>
-        <ul class="report__list report__list--impression">
-          <li class="report__item">
-            <input class="report__radio" type="radio" name="impression10" id="impression10" value="10" checked>
-            <label class="report__label" for="impression10">Скорее положительное</label>
+      <fieldset class="report__fieldset impression">
+        <legend class="impression__title">Ваше общее впечатление:</legend>
+        <ul class="impression__list">
+          <li class="impression__item">
+            <input class="impression__radio" type="radio" name="impression" id="impression10" value="10" checked>
+            <label class="impression__label" for="impression10">Скорее положительное</label>
           </li>
-          <li class="report__item">
-            <input class="report__radio" type="radio" name="impression0" id="impression0" value="0">
-            <label class="report__label" for="impressions0">Скорее отрицательное</label>
+          <li class="impression__item">
+            <input class="impression__radio" type="radio" name="impression" id="impression0" value="0">
+            <label class="impression__label" for="impression0">Скорее отрицательное</label>
           </li>
-          <li class="report__item">
-            <input class="report__radio" type="radio" name="impression5" id="impression5" value="5">
-            <label class="report__label" for="impression5">Затрудняюсь ответить</label>
+          <li class="impression__item">
+            <input class="impression__radio" type="radio" name="impression" id="impression5" value="5">
+            <label class="impression__label" for="impression5">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
@@ -97,24 +120,24 @@
 
       <!-- Блок мест, посещенных ревьювером -->
       <!-- Выбор чек-боксы -->
-      <fieldset class="report__visited">
-        <legend class="report__title">Посещенные достопримечательности:</legend>
-        <ul class="report__list report__list--visited">
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked>
-            <label class="report__label" for="visit1">Мост Дьявола</label>
+      <fieldset class="report__fieldset places">
+        <legend class="places__title">Посещенные достопримечательности:</legend>
+        <ul class="places__list">
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked>
+            <label class="places__label" for="visit1">Мост Дьявола</label>
           </li>
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked>
-            <label class="report__label" for="visit2">Слайд-парк</label>
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked>
+            <label class="places__label" for="visit2">Слайд-парк</label>
           </li>
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Гора-Колокол" id="visit3" checked>
-            <label class="report__label" for="visit3">Гора-Колокол</label>
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Гора-Колокол" id="visit3" checked>
+            <label class="places__label" for="visit3">Гора-Колокол</label>
           </li>
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Красные скалы" id="visit4">
-            <label class="report__label" for="visit4">Красные скалы</label>
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Красные скалы" id="visit4">
+            <label class="places__label" for="visit4">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
@@ -122,7 +145,7 @@
 
       <!-- Отзыв ревьювером -->
       <!-- Текстовое поле -->
-      <fieldset class="report__effect">
+      <fieldset class="report__fieldset report__fieldset--effect">
         <legend class="report__title">Опишите свои эмоции:</legend>
         <textarea name="effect" class="report__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
@@ -137,12 +160,33 @@
     <p class="page-footer__hashtag">#visitsedona</p>
     <section class="page-footer__social socials">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">Twitter</a>
-      <a href="https://ru-ru.facebook.com/" class="socials__link socials__link--fb" target="_blank" >Facebook</a>
-      <a href="https://www.youtube.com/" class="socials__link socials__link--ut" target="_blank">Youtube</a>
+      <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">
+        <span class="visually-hidden">Twitter</span>
+        <svg width="18" height="19" class="socials__icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tw"></use>
+        </svg>
+      </a>
+      <a href="https://ru-ru.facebook.com/" class="socials__link socials__link--fb" target="_blank" >
+        <span class="visually-hidden">Facebook</span>
+        <svg width="9" height="19" class="socials__icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb"></use>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/" class="socials__link socials__link--ut" target="_blank">
+        <span class="visually-hidden">Youtube</span>
+        <svg width="20" height="14" class="socials__icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ut"></use>
+        </svg>
+      </a>
     </section>
-    <div class="page-footer__copyright">Разработано
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" target="_blank">HTLAcademy</a>
+    <div class="page-footer__copyright">
+      <span>Разработано</span>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" target="_blank">
+        <svg width="27" height="34" class="page-footer__copyright-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#html-logo"></use>
+        </svg>
+        <span class="visually-hidden">HTLAcademy</span>
+      </a>
     </div>
   </footer>
 
@@ -161,6 +205,8 @@
     <button class="modal__btn" type="button">Закрыть окно</button>
   </div>
   <!-- //Модальное окно: отправка отзыва -->
+
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>

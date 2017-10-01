@@ -1,0 +1,38 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 43px;
+}
+
+.socials__link {
+  display: block;
+  box-sizing: border-box;
+  width: 47px;
+  height: 47px;
+  padding-top: 10px;
+  margin-right: 6px;
+  background-color: $steelblue;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: $slategray;
+  }
+
+  &:active {
+    background-color: $cadetblue;
+  }
+
+  &:active > .socials__icon {
+    fill: $lightblue;
+  }
+}
+
+.socials__icon {
+  fill: $white;
+  text-align: center;
+  vertical-align: middle;
+}

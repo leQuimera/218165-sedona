@@ -1,0 +1,57 @@
+.report {
+  padding-top: 18px;
+  text-align: left;
+  border-top: 1px solid $steel;
+}
+
+.report__fieldset {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--effect {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+  }
+}
+
+.report__title {
+  padding-top: 18px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+}
+
+.report__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 160px;
+  padding: 18px;
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  font-family: inherit;
+  color: $black;
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
+}
+
+.report__btn {
+  @include btn();
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.report__legend {
+  display: none;
+}

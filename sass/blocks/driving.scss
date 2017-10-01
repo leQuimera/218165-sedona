@@ -1,0 +1,31 @@
+.driving {
+  min-height: 350px;
+}
+
+.driving__map {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+  &::after {
+    top: 166px;
+    left: 152px;
+    width: 17px;
+    height: 17px;
+    background-color: $steelblue;
+  }
+}

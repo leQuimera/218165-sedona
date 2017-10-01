@@ -1,0 +1,30 @@
+.page-main {
+  padding-top: 3px;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.page-main__header {
+  padding: 0 20px;
+  margin-bottom: 29px;
+  text-align: center;
+}
+
+.page-main__title {
+  margin-top: -1px;
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  letter-spacing: 0.01em;
+}
+
+.page-main__lead {
+  padding: 0 4px;
+
+  &--form {
+    padding: 0;
+    margin-bottom: -11px;
+  }
+}

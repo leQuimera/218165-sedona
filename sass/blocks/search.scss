@@ -1,0 +1,27 @@
+.search {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.search__subtitle {
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 18px;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
+}
+
+.search__lead {
+  margin-bottom: 34px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.search__link {
+  @include btn();
+}

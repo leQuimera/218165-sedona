@@ -1,0 +1,41 @@
+.page-footer {
+  width: 100%;
+  text-align: center;
+  background-color: $ghostwhite;
+}
+
+.page-footer__hashtag {
+  margin-bottom: 39px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+
+.page-footer__text {
+  margin-right: 9px;
+  color: $black;
+}
+
+.page-footer__copyright-link {
+  display: block;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  margin-top: -4px;
+}
+
+.page-footer__copyright-icon:hover {
+  fill: $steelblue;
+}
+
+.page-footer__copyright-icon:active {
+  fill: $gray;
+}

@@ -1,0 +1,91 @@
+.video {
+  margin-bottom: 73px;
+}
+
+.video__subtitle {
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.video__lead {
+  padding: 0 25px;
+  margin-bottom: 35px;
+}
+
+.video__content {
+  width: 100%;
+  padding-top: 156px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.video__rotor {
+  position: relative;
+  width: 280px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: $black;
+  opacity: 0.6;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 3px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    background-color: $white;
+    opacity: 0.3;
+  }
+}
+
+.video__drager {
+  position: absolute;
+  top: 17px;
+  left: 58px;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.video__panel {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+  background-color: $mintcream;
+}
+
+.video__control {
+  background-color: transparent;
+  border: none;
+}
+
+.video__control--replay {
+  margin-left: 19px;
+  margin-right: auto;
+}
+
+.video__control--fullscreen {
+  margin-left: 19px;
+  margin-right: 17px;
+}
+
+.header-services__icon {
+  fill: $darkgray;
+
+  &:hover {
+    fill: $dimgray;
+  }
+
+  &:active {
+    fill: $whitesmoke;
+  }
+}
