@@ -19,15 +19,15 @@
   }
 
   &:hover {
-    background-color: $slategrey;
+    background-color: $slategray;
   }
 
   &:active {
-    background-color: $slategrey;
+    background-color: $cadetblue;
   }
 
   &:active > .socials__icon {
-    fill: $dimgrey;
+    fill: $lightblue;
   }
 }
 

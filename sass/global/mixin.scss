@@ -11,18 +11,25 @@
   min-height: 57px;
   padding-top: 14px;
   background-color: $steelblue;
+  font-family: "PTSans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: $white;
   text-decoration: none;
+  text-transform: uppercase;
+  border: none;
 
   &:hover {
-    background-color: $slategrey;
+    background-color: $slategray;
   }
 
   &:active {
-    color: $dimgrey;
+    color: $lightblue;
+    background-color: $cadetblue;
+  }
+
+  &:disabled {
     background-color: $cadetblue;
   }
 }

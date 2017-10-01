@@ -11,8 +11,7 @@
 
 .video__lead {
   padding: 0 25px;
-  margin-bottom: 36px;
-  line-height: 24px;
+  margin-bottom: 35px;
 }
 
 .video__content {
@@ -23,12 +22,13 @@
   background-repeat: no-repeat;
 }
 
-.video__controls {
+.video__rotor {
   position: relative;
   width: 280px;
   height: 45px;
   margin: 0 auto;
-  background-color: $silver;
+  background-color: $black;
+  opacity: 0.6;
 
   &::before {
     content: "";
@@ -60,7 +60,7 @@
   width: 280px;
   height: 66px;
   margin: 0 auto;
-  background-color: $gray;
+  background-color: $mintcream;
 }
 
 .video__control {
@@ -82,7 +82,7 @@
   fill: $darkgray;
 
   &:hover {
-    fill: $ghostwhite;
+    fill: $dimgray;
   }
 
   &:active {

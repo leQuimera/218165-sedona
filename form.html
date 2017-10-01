@@ -46,7 +46,7 @@
         <img src="img/logo-sedona-mobile.svg" alt="Город Седона">
       </a>
       <div class="page-header__slogan">
-        <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону" class="page-header__img--inner">
+        <img src="img/text-sedona.svg" alt="Добро пожаловать в Седону" class="page-header__img page-header__img--inner">
       </div>
     </div>
     <!-- //Блок с картинкой  -->
@@ -61,20 +61,20 @@
     <form class="report" action="https://echo.htmlacademy.ru/" method="post">
       <!-- Блок личной информации ревьювера-->
       <!-- Текстовые поля -->
-      <fieldset class="report__fieldset report__fieldset--reviewer">
-        <legend class="report__title">Представьтесь:</legend>
-        <ul class="report__list report__list--reviewer">
-          <li class="report__item">
-            <label class="report__label" for="firstname">Имя<sup>*</sup>: </label>
-            <input class="report__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
+      <fieldset class="report__fieldset reviewer">
+        <legend class="reviewer__title">Представьтесь:</legend>
+        <ul class="reviewer__list">
+          <li class="reviewer__item">
+            <label class="reviewer__label" for="firstname">Имя<sup>*</sup>: </label>
+            <input class="reviewer__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
           </li>
-          <li class="report__item">
-            <label class="report__label" for="lastname">Фамилия<sup>*</sup>: </label>
-            <input class="report__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
+          <li class="reviewer__item">
+            <label class="reviewer__label" for="lastname">Фамилия<sup>*</sup>: </label>
+            <input class="reviewer__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
           </li>
-          <li class="report__item">
-            <label class="report__label" for="middlename">Отчество: </label>
-            <input class="report__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
+          <li class="reviewer__item">
+            <label class="reviewer__label" for="middlename">Отчество: </label>
+            <input class="reviewer__input" type="text" placeholder="Александрович" name="middlename" id="middlename">
           </li>
         </ul>
       </fieldset>
@@ -82,16 +82,16 @@
 
       <!-- Блок контактной информации ревьювера-->
       <!-- Текстовые поля -->
-      <fieldset class="report__fieldset report__fieldset--contacts">
-        <legend class="report__title">Контактная информация:</legend>
-        <ul class="report__list report__list--contacts">
-          <li class="report__item report__item--contacts">
-            <label class="report__label" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
-            <input class="report__input report__input--tel" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
+      <fieldset class="report__fieldset contacts">
+        <legend class="contacts__title">Контактная информация:</legend>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <label class="contacts__label contacts__label--tel" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
+            <input class="contacts__input" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
           </li>
-          <li class="report__item  report__item--contacts">
-            <label class="report__label" for="email">Электронная почта<sup>*</sup>: </label>
-            <input class="report__input report__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+          <li class="contacts__item">
+            <label class="contacts__label contacts__label--email" for="email">Электронная почта<sup>*</sup>: </label>
+            <input class="contacts__input" type="email" placeholder="Введите e-mail" name="email" id="email" required>
           </li>
         </ul>
       </fieldset>
@@ -99,20 +99,20 @@
 
       <!-- Блок впечатления ревьювера -->
       <!-- Выбор радио-батон -->
-      <fieldset class="report__fieldset report__fieldset--impression">
-        <legend class="report__title">Ваше общее впечатление:</legend>
-        <ul class="report__list report__list--impression">
-          <li class="report__item">
-            <input class="report__radio" type="radio" name="impression10" id="impression10" value="10" checked>
-            <label class="report__label" for="impression10">Скорее положительное</label>
+      <fieldset class="report__fieldset impression">
+        <legend class="impression__title">Ваше общее впечатление:</legend>
+        <ul class="impression__list">
+          <li class="impression__item">
+            <input class="impression__radio" type="radio" name="impression" id="impression10" value="10" checked>
+            <label class="impression__label" for="impression10">Скорее положительное</label>
           </li>
-          <li class="report__item">
-            <input class="report__radio" type="radio" name="impression0" id="impression0" value="0">
-            <label class="report__label" for="impressions0">Скорее отрицательное</label>
+          <li class="impression__item">
+            <input class="impression__radio" type="radio" name="impression" id="impression0" value="0">
+            <label class="impression__label" for="impression0">Скорее отрицательное</label>
           </li>
-          <li class="report__item">
-            <input class="report__radio" type="radio" name="impression5" id="impression5" value="5">
-            <label class="report__label" for="impression5">Затрудняюсь ответить</label>
+          <li class="impression__item">
+            <input class="impression__radio" type="radio" name="impression" id="impression5" value="5">
+            <label class="impression__label" for="impression5">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
@@ -120,24 +120,24 @@
 
       <!-- Блок мест, посещенных ревьювером -->
       <!-- Выбор чек-боксы -->
-      <fieldset class="report__fieldset report__fieldset--visited">
-        <legend class="report__title">Посещенные достопримечательности:</legend>
-        <ul class="report__list report__list--visited">
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked>
-            <label class="report__label" for="visit1">Мост Дьявола</label>
+      <fieldset class="report__fieldset places">
+        <legend class="places__title">Посещенные достопримечательности:</legend>
+        <ul class="places__list">
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked>
+            <label class="places__label" for="visit1">Мост Дьявола</label>
           </li>
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked>
-            <label class="report__label" for="visit2">Слайд-парк</label>
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked>
+            <label class="places__label" for="visit2">Слайд-парк</label>
           </li>
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Гора-Колокол" id="visit3" checked>
-            <label class="report__label" for="visit3">Гора-Колокол</label>
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Гора-Колокол" id="visit3" checked>
+            <label class="places__label" for="visit3">Гора-Колокол</label>
           </li>
-          <li class="report__item">
-            <input class="report__check" type="checkbox" name="visited" value="Красные скалы" id="visit4">
-            <label class="report__label" for="visit4">Красные скалы</label>
+          <li class="places__item">
+            <input class="places__check" type="checkbox" name="visited" value="Красные скалы" id="visit4">
+            <label class="places__label" for="visit4">Красные скалы</label>
           </li>
         </ul>
       </fieldset>

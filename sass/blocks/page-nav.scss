@@ -7,8 +7,8 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 16px;
-  right: 20px;
+  top: 17px;
+  right: 22px;
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='22.199px' height='22.199px' viewBox='0 0 22.199 22.199' enable-background='new 0 0 22.199 22.199' xml:space='preserve'%3E%3Cpolygon fill='%23ffffff' points='22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 '/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@
   padding-top: 7px;
   padding-bottom: 7px;
   border-bottom: 1px solid $darkslategray;
-  border-top: 1px solid $lightgray;
+  border-top: 1px solid $powderblue;
   background-color: $steelblue;
   font-weight: 700;
   font-size: 18px;
@@ -50,12 +50,12 @@
   text-decoration: none;
 
   &:hover {
-    background-color: $slategrey;
+    background-color: $slategray;
   }
 
   &:active {
-    color: $dimgrey;
-    background-color: $cadetblue;
+    color: $lightblue;
+    background-color: $slategray;
   }
 
   &--active {

@@ -1,6 +1,7 @@
 .page-footer {
   width: 100%;
   text-align: center;
+  background-color: $ghostwhite;
 }
 
 .page-footer__hashtag {
@@ -8,6 +9,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  color: $black;
 }
 
 .page-footer__copyright {
@@ -19,6 +21,7 @@
 
 .page-footer__text {
   margin-right: 9px;
+  color: $black;
 }
 
 .page-footer__copyright-link {
@@ -34,5 +37,5 @@
 }
 
 .page-footer__copyright-icon:active {
-  fill: $lightgray;
+  fill: $gray;
 }
