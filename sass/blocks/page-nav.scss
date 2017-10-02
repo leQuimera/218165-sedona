@@ -121,3 +121,10 @@
     }
   }
 }
+
+@media #{$width-desktop} {
+  .page-nav__item {
+    margin-left: 42px;
+    margin-right: 44px;
+  }
+}

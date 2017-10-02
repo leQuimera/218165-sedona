@@ -80,7 +80,7 @@
     &--general {
       padding-top: 75px;
       padding-bottom: 86px;
-      margin-bottom: 25px;
+      margin-bottom: 23px;
     }
   }
 
@@ -88,5 +88,15 @@
     padding-top: 0;
     width: 459px;
     height: auto;
+  }
+}
+
+@media #{$width-desktop} {
+  .page-header__logo {
+    left: 547px;
+  }
+
+  .page-header__img {
+    padding-top: 1px;
   }
 }

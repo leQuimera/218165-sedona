@@ -28,3 +28,15 @@
     margin-bottom: -11px;
   }
 }
+
+@media #{$width-tablet} {
+  .page-main {
+    margin-bottom: 25px;
+  }
+}
+
+@media #{$width-desktop} {
+  .page-main {
+    margin-bottom: 22px;
+  }
+}

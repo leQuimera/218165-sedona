@@ -116,3 +116,26 @@
     padding: 0 50px;
   }
 }
+
+@media #{$width-desktop} {
+  .features {
+    margin-bottom: 55px;
+  }
+
+  .features__item {
+    &--house::before {
+      top: -72px;
+      left: 163px;
+    }
+
+    &--souvenir::before {
+      top: -74px;
+      left: 163px;
+    }
+
+    &--meal::before {
+      top: -73px;
+      left: 163px;
+    }
+  }
+}

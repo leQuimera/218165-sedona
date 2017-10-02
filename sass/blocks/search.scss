@@ -47,3 +47,14 @@
     width: 460px;
   }
 }
+
+@media #{$width-desktop} {
+  .search {
+    margin-bottom: 67px;
+  }
+
+  .search__lead {
+    padding: 0 220px;
+    margin-bottom: 46px;
+  }
+}

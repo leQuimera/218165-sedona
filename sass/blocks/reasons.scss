@@ -54,6 +54,7 @@
   .reasons__title {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 30px;
   }
 
   .reasons__list {
@@ -69,5 +70,11 @@
     &:first-child::before {
       content: none;
     }
+  }
+}
+
+@media #{$width-desktop} {
+  .reasons {
+    margin-bottom: 90px;
   }
 }
