@@ -27,7 +27,7 @@
   background-size: auto;
 
   &--general {
-    margin-bottom: 35px;
+    margin-bottom: 12px;
     background-position: -228px -4px;
     background-size: cover;
   }
@@ -60,5 +60,33 @@
     padding-bottom: 8px;
     width: 230px;
     height: 140px;
+  }
+}
+
+@media #{$width-tablet} {
+  .page-header__promo {
+    padding-top: 0;
+  }
+
+  .page-header__logo {
+    display: block;
+    position: absolute;
+    top: -59px;
+    left: 333px;
+    z-index: 10;
+  }
+
+  .page-header__slogan {
+    &--general {
+      padding-top: 75px;
+      padding-bottom: 86px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .page-header__img {
+    padding-top: 0;
+    width: 459px;
+    height: auto;
   }
 }

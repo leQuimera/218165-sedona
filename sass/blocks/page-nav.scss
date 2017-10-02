@@ -70,3 +70,54 @@
     }
   }
 }
+
+
+@media #{$width-tablet} {
+  .page-nav__toggle {
+    display: none;
+  }
+
+  .page-nav__list {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    background-color: $white;
+  }
+
+  .page-nav__item {
+    width: 153px;
+
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+  }
+
+  .page-nav__link {
+    min-height: 30px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 26px;
+    color: $black;
+    background-color: $white;
+    border: none;
+
+    &:hover {
+      color: $steelblue;
+      background-color: $white;
+    }
+
+    &:active {
+      color: $steel;
+      background-color: $white;
+    }
+
+    &--active:hover,
+    &--active:active {
+      color: $black;
+      background-color: $white;
+    }
+  }
+}

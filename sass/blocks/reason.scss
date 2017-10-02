@@ -3,7 +3,7 @@
   width: 100%;
 
   &:nth-child(1) {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
 
@@ -25,6 +25,7 @@
   text-align: center;
 
   &--bg {
+    margin-bottom: 16px;
     color: $white;
   }
 }
@@ -51,36 +52,31 @@
 }
 
 .reason__num {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   line-height: 21px;
 
   &::before,
   &::after {
     content: "";
-    position: absolute;
-    top: 9px;
-    left: 102px;
     width: 9px;
     height: 2px;
     background-color: $dimgray;
   }
 
+  &::before {
+    margin-right: 5px;
+  }
+
   &::after {
-    top: 9px;
-    left: 146px;
+    margin-left: 5px;
   }
 
   &--bg::before,
   &--bg::after {
-    top: 9px;
-    left: 112px;
     background-color: $white;
-  }
-
-  &--bg::after {
-    top: 9px;
-    left: 156px;
   }
 }
 
@@ -97,4 +93,82 @@
 
 .reason__text {
   line-height: 21px;
+}
+
+@media #{$width-tablet} {
+  .reason {
+    position: relative;
+    width: 33.33%;
+
+    &--full {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
+    &:nth-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  .reason__underline::after {
+    content: none;
+  }
+
+  .reason__title {
+    font-size: 21px;
+    line-height: 26px;
+
+    &--bg {
+      margin-bottom: 10px;
+    }
+
+    &--cut {
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .reason__img {
+    width: 512px;
+    height: 257px;
+    overflow: hidden;
+
+    &--reversal {
+      order: 1;
+    }
+  }
+
+  .reason__description {
+    justify-content: flex-start;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    &--bg {
+      width: 256px;
+      box-sizing: border-box;
+      padding-top: 24px;
+      padding-left: 28px;
+      padding-right: 29px;
+      padding-bottom: 0;
+    }
+
+    &--reversal {
+      order: 2;
+    }
+  }
+
+  .reason__num {
+    margin-bottom: 6px;
+  }
+
+  .reason__list {
+    display: flex;
+    width: 100%;
+  }
+
+  .reason__text {
+    padding: 0 15px;
+  }
 }

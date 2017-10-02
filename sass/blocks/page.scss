@@ -1,5 +1,17 @@
 .page {
-  width: 320px;
+  width: $mbl-width;
   margin: 0 auto;
   padding: 0;
+}
+
+@media #{$width-tablet} {
+  .page {
+    width: $tbl-width;
+  }
+}
+
+@media #{$width-desktop} {
+  .page {
+    width: $dsk-width;
+  }
 }

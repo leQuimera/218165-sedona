@@ -44,3 +44,30 @@
   background-size: cover;
   height: 20px;
 }
+
+@media #{$width-tablet} {
+  .reasons__header {
+    width: 495px;
+    margin-bottom: 50px;
+  }
+
+  .reasons__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .reasons__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .reasons__item {
+    position: initial;
+
+    &:first-child::before {
+      content: none;
+    }
+  }
+}

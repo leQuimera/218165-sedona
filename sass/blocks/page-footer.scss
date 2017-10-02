@@ -39,3 +39,16 @@
 .page-footer__copyright-icon:active {
   fill: $gray;
 }
+
+@media #{$width-tablet} {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}

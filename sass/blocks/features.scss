@@ -52,3 +52,67 @@
   line-height: 21px;
   margin-bottom: 29px;
 }
+
+@media #{$width-tablet} {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 130px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  .features__item {
+    width: 33.3%;
+
+    &--house {
+      order: 1;
+    }
+
+    &--souvenir {
+      order: 3;
+
+      & .features__text {
+        padding: 0 46px;
+      }
+    }
+
+    &--meal {
+      order: 2;
+    }
+
+    &::before {
+      width: 75px;
+      height: 75px;
+    }
+
+    &--house::before {
+      width: 73px;
+      height: 73px;
+      top: -71px;
+      left: 91px;
+    }
+
+    &--souvenir::before {
+      top: -74px;
+      left: 91px;
+    }
+
+    &--meal::before {
+      top: -74px;
+      left: 91px;
+    }
+  }
+
+  .features__title {
+    margin-bottom: 21px;
+    font-size: 21px;
+  }
+
+  .features__text {
+    padding: 0 50px;
+  }
+}
