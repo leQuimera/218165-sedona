@@ -2,8 +2,25 @@
   position: relative;
   width: 100%;
 
+  @media #{$bp-width-tablet} {
+    position: relative;
+    width: 33.33%;
+  }
+
+  &--full {
+    @media #{$bp-width-tablet} {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
   &:nth-child(1) {
-    margin-bottom: 35px;
+    margin-bottom: 0;
+
+    @media #{$bp-width-tablet} {
+      margin-bottom: 35px;
+    }
   }
 }
 
@@ -16,17 +33,44 @@
   height: 1px;
   background-color: $gray;
   z-index: 1;
+
+  @media #{$bp-width-tablet} {
+    content: none;
+  }
 }
 
 .reason__title {
   font-size: 18px;
-  line-height: 10px;
+  line-height: 21px;
   color: $black;
   text-align: center;
 
   &--bg {
     margin-bottom: 16px;
     color: $white;
+
+    @media #{$bp-width-tablet} {
+      margin-bottom: 10px;
+    }
+
+    @media #{$bp-width-desktop} {
+      padding-left: 64px;
+      padding-right: 64px;
+      padding-top: 6px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &--cut {
+    @media #{$bp-width-tablet} {
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+
+    @media #{$bp-width-desktop} {
+      padding: 0 87px;
+      margin-bottom: 11px;
+    }
   }
 }
 
@@ -41,6 +85,13 @@
   text-align: center;
   background-color: $azure;
 
+  @media #{$bp-width-tablet} {
+    justify-content: flex-start;
+    padding-top: 23px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   &--bg {
     padding-top: 31px;
     padding-left: 22px;
@@ -48,6 +99,26 @@
     padding-bottom: 26px;
     background-color: $steelblue;
     color: $white;
+
+    @media #{$bp-width-tablet} {
+      width: 256px;
+      box-sizing: border-box;
+      padding-top: 24px;
+      padding-left: 28px;
+      padding-right: 29px;
+      padding-bottom: 0;
+    }
+
+    @media #{$bp-width-desktop} {
+      width: 400px;
+      padding-top: 21px;
+    }
+  }
+
+  &--reversal {
+    @media #{$bp-width-tablet} {
+      order: 2;
+    }
   }
 }
 
@@ -57,6 +128,14 @@
   align-items: center;
   font-weight: 700;
   line-height: 21px;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 8px;
+  }
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 6px;
+  }
 
   &::before,
   &::after {
@@ -82,6 +161,11 @@
 
 .reason__list {
   @include clear-list();
+
+  @media #{$bp-width-tablet} {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .reason__img {
@@ -89,129 +173,44 @@
   height: 260px;
   background-color: $white;
   overflow: hidden;
+
+  @media #{$bp-width-tablet} {
+    width: 512px;
+    height: 257px;
+    overflow: hidden;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 800px;
+  }
+
+  &--reversal {
+    @media #{$bp-width-tablet} {
+      order: 1;
+    }
+  }
 }
 
 .reason__text {
   line-height: 21px;
-}
 
-@media #{$bp-width-tablet} {
-  .reason {
-    position: relative;
-    width: 33.33%;
-
-    &--full {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-    &:nth-child(1) {
-      margin-bottom: 0;
-    }
-  }
-
-  .reason__underline::after {
-    content: none;
-  }
-
-  .reason__title {
-    font-size: 21px;
-    line-height: 26px;
-
-    &--bg {
-      margin-bottom: 10px;
-    }
-
-    &--cut {
-      padding: 0 15px;
-      margin-bottom: 10px;
-    }
-  }
-
-  .reason__img {
-    width: 512px;
-    height: 257px;
-    overflow: hidden;
-
-    &--reversal {
-      order: 1;
-    }
-  }
-
-  .reason__description {
-    justify-content: flex-start;
-    padding-top: 23px;
-    padding-left: 35px;
-    padding-right: 35px;
-
-    &--bg {
-      width: 256px;
-      box-sizing: border-box;
-      padding-top: 24px;
-      padding-left: 28px;
-      padding-right: 29px;
-      padding-bottom: 0;
-    }
-
-    &--reversal {
-      order: 2;
-    }
-  }
-
-  .reason__num {
-    margin-bottom: 8px;
-  }
-
-  .reason__list {
-    display: flex;
-    width: 100%;
-  }
-
-  .reason__text {
+  @media #{$bp-width-tablet} {
     padding: 0 15px;
   }
-}
 
-@media #{$bp-width-desktop} {
-  .reason__description {
-    &--bg {
-      width: 400px;
-      padding-top: 21px;
-    }
-  }
-
-  .reason__img {
-    width: 800px;
-  }
-
-  .reason__title {
-    &--bg {
-      padding-left: 64px;
-      padding-right: 64px;
-      padding-top: 6px;
-      margin-bottom: 12px;
-    }
-
-    &--cut {
-      padding: 0 87px;
-      margin-bottom: 11px;
-    }
-  }
-
-  .reason__text {
+  @media #{$bp-width-desktop} {
     padding: 0 20px;
+  }
 
-    &--long {
+  &--long {
+    @media #{$bp-width-desktop} {
       padding: 0 26px;
     }
-
-    &--short {
-      padding: 0 54px;
-    }
   }
 
-  .reason__num {
-    margin-bottom: 6px;
+  &--short {
+    @media #{$bp-width-desktop} {
+      padding: 0 54px;
+    }
   }
 }
