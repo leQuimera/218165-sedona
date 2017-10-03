@@ -2,16 +2,12 @@
   width: $mbl-width;
   margin: 0 auto;
   padding: 0;
-}
 
-@media #{$width-tablet} {
-  .page {
+  @media #{$bp-width-tablet} {
     width: $tbl-width;
   }
-}
 
-@media #{$width-desktop} {
-  .page {
+  @media #{$bp-width-desktop} {
     width: $dsk-width;
   }
 }

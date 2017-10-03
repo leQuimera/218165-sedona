@@ -2,6 +2,14 @@
   padding-top: 3px;
   margin-bottom: 34px;
   text-align: center;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 25px;
+  }
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 22px;
+  }
 }
 
 .page-main__header {
@@ -26,17 +34,5 @@
   &--form {
     padding: 0;
     margin-bottom: -11px;
-  }
-}
-
-@media #{$width-tablet} {
-  .page-main {
-    margin-bottom: 25px;
-  }
-}
-
-@media #{$width-desktop} {
-  .page-main {
-    margin-bottom: 22px;
   }
 }

@@ -14,7 +14,7 @@
   left: 20px;
   width: 280px;
   height: 1px;
-  background-color: $darkgray;
+  background-color: $gray;
   z-index: 1;
 }
 
@@ -95,7 +95,7 @@
   line-height: 21px;
 }
 
-@media #{$width-tablet} {
+@media #{$bp-width-tablet} {
   .reason {
     position: relative;
     width: 33.33%;
@@ -173,7 +173,7 @@
   }
 }
 
-@media #{$width-desktop} {
+@media #{$bp-width-desktop} {
   .reason__description {
     &--bg {
       width: 400px;
