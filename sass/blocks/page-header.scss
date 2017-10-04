@@ -42,15 +42,27 @@
   background-repeat: no-repeat;
   background-size: auto;
 
+  @media #{$bp-width-tablet} {
+    margin-bottom: 67px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
   &--general {
     margin-bottom: 12px;
     background-position: -228px -4px;
-    background-size: cover;
 
     @media #{$bp-width-tablet} {
       padding-top: 75px;
       padding-bottom: 86px;
       margin-bottom: 23px;
+      background-position: 50% 50%;
+    }
+
+    @media #{$bp-width-desktop} {
+      padding-top: 76px;
+      padding-bottom: 84px;
     }
   }
 
@@ -92,5 +104,12 @@
     padding-bottom: 8px;
     width: 230px;
     height: 140px;
+
+    @media #{$bp-width-tablet} {
+      padding-top: 64px;
+      padding-bottom: 80px;
+      width: 460px;
+      height: 140px;
+    }
   }
 }

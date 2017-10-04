@@ -1,10 +1,10 @@
 .page-main {
-  padding-top: 3px;
+  padding-top: 7px;
   margin-bottom: 34px;
   text-align: center;
 
   @media #{$bp-width-tablet} {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   @media #{$bp-width-desktop} {
@@ -16,6 +16,10 @@
   padding: 0 20px;
   margin-bottom: 29px;
   text-align: center;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 69px;
+  }
 }
 
 .page-main__title {
@@ -26,10 +30,21 @@
   line-height: 26px;
   color: $black;
   letter-spacing: 0.01em;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 31px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .page-main__lead {
   padding: 0 4px;
+
+  @media #{$bp-width-tablet} {
+    padding: 0 142px;
+  }
 
   &--form {
     padding: 0;
