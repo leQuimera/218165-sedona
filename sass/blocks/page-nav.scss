@@ -45,6 +45,10 @@
 
   &--closed {
     display: none;
+
+    @media #{$bp-width-tablet} {
+      display: flex;
+    }
   }
 }
 
