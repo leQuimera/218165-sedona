@@ -1,13 +1,19 @@
 .gallery {
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   border-top: 1px solid $steel;
 
   @media #{$bp-width-tablet} {
     width: 648px;
     margin: 0 auto;
+    margin-bottom: 66px;
     display: flex;
     flex-wrap: wrap;
     border: none;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: $dsk-width;
+    padding-bottom: 5px;
   }
 }

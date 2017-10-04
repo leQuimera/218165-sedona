@@ -49,6 +49,10 @@
     background-position: 50% 50%;
   }
 
+  @media #{$bp-width-desktop} {
+    margin-bottom: 104px;
+  }
+
   &--general {
     margin-bottom: 12px;
     background-position: -228px -4px;
@@ -110,6 +114,11 @@
       padding-bottom: 80px;
       width: 460px;
       height: 140px;
+    }
+
+    @media #{$bp-width-desktop} {
+      padding-top: 72px;
+      padding-bottom: 83px;
     }
   }
 }

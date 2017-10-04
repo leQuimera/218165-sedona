@@ -20,6 +20,10 @@
   @media #{$bp-width-tablet} {
     margin-bottom: 69px;
   }
+
+  @media #{$bp-width-desktop} {
+    padding: 0 237px;
+  }
 }
 
 .page-main__title {
