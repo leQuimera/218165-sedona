@@ -53,5 +53,9 @@
   &--form {
     padding: 0;
     margin-bottom: -11px;
+
+    @media #{$bp-width-tablet} {
+      padding: 0 142px;
+    }
   }
 }

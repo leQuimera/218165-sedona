@@ -29,6 +29,12 @@
     margin-left: 74px;
     margin-right: -98px;
   }
+
+  &--form {
+    @media #{$bp-width-tablet} {
+      margin-right: -15px;
+    }
+  }
 }
 
 .page-footer__copyright {
@@ -49,6 +55,7 @@
   width: 35px;
   height: 35px;
   margin-top: -4px;
+  margin-left: 7px;
 }
 
 .page-footer__copyright-icon:hover {

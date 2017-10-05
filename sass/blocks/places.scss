@@ -1,6 +1,14 @@
 .places {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   border-bottom: 1px solid $steel;
+
+
+  @media #{$bp-width-tablet} {
+    order: 4;
+    width: 100%;
+    margin-bottom: 27px;
+    border: none;
+  }
 }
 
 .places__title {
@@ -12,12 +20,45 @@
   line-height: 26px;
   letter-spacing: 0.01em;
   text-align: center;
+
+  @media #{$bp-width-tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 33px;
+    font-size: 21px;
+  }
+
+  &::before,
+  &::after {
+    @media #{$bp-width-tablet} {
+      flex-grow: 1;
+      height: 1px;
+      width: 40%;
+      background-color: red;
+    }
+  }
 }
 
 .places__list {
   @include clear-list();
   padding-left: 20px;
   padding-right: 20px;
+
+  @media #{$bp-width-tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    width: 583px;
+    padding-right: 0;
+    padding-left: 61px;
+    margin: 0 auto;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .places__item {
@@ -28,6 +69,67 @@
   align-items: center;
   min-height: 69px;
   cursor: pointer;
+
+  @media #{$bp-width-tablet} {
+    width: 200px;
+    margin-right: 61px;
+    margin-bottom: 19px;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 25%;
+    margin-right: 0;
+  }
+
+  &:nth-child(even) {
+    @media #{$bp-width-tablet} {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(1) {
+    @media #{$bp-width-tablet} {
+      order: 0;
+      margin-right: 61px;
+    }
+
+    @media #{$bp-width-desktop} {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(2) {
+    @media #{$bp-width-tablet} {
+      order: 2;
+      margin-right: 61px;
+    }
+
+    @media #{$bp-width-desktop} {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    @media #{$bp-width-tablet} {
+      order: 1;
+      margin-right: 0;
+    }
+
+    @media #{$bp-width-desktop} {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(4) {
+    @media #{$bp-width-tablet} {
+      order: 3;
+      margin-right: 0;
+    }
+
+    @media #{$bp-width-desktop} {
+      margin-right: 0;
+    }
+  }
 }
 
 .places__label {

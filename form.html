@@ -150,14 +150,15 @@
         <textarea name="effect" class="report__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <!-- //Отзыв ревьювером -->
-
-      <button class="report__btn" type="submit">Отправить отзыв</button>
-      <p class="report__legend">* - обязательные поля</p>
+      <div class="report__fieldset report__fieldset--btn">
+        <button class="report__btn" type="submit">Отправить отзыв</button>
+        <p class="report__legend">* - обязательные поля</p>
+      </div>
     </form>
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__hashtag">#visitsedona</p>
+    <p class="page-footer__hashtag page-footer__hashtag--form">#visitsedona</p>
     <section class="page-footer__social socials">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">
@@ -199,9 +200,9 @@
   <!-- //Модальное окно: ошибка -->
 
   <!-- Модальное окно: отправка отзыва -->
-  <div class="modal" id="js-modal-sended">
+  <div class="modal modal--sended" id="js-modal-sended">
     <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-    <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <p class="modal__message modal__message--sended">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
     <button class="modal__btn" type="button">Закрыть окно</button>
   </div>
   <!-- //Модальное окно: отправка отзыва -->

@@ -1,6 +1,14 @@
 .contacts {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   border-bottom: 1px solid $steel;
+
+
+  @media #{$bp-width-tablet} {
+    order: 3;
+    width: 100%;
+    margin-bottom: 9px;
+    border: none;
+  }
 }
 
 .contacts__title {
@@ -11,12 +19,56 @@
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.01em;
+
+  @media #{$bp-width-tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 27px;
+    font-size: 21px;
+  }
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 74px;
+  }
+
+  &::before,
+  &::after {
+    @media #{$bp-width-tablet} {
+      content: "";
+      flex-grow: 1;
+      width: 125px;
+      height: 1px;
+      background-color: $mintcream;
+    }
+  }
+
+  &::before {
+    @media #{$bp-width-tablet} {
+      margin-right: 60px;
+    }
+  }
+
+  &::after {
+    @media #{$bp-width-tablet} {
+      margin-left: 60px;
+    }
+  }
 }
 
 .contacts__list {
   @include clear-list();
   padding-left: 20px;
   padding-right: 20px;
+
+  @media #{$bp-width-tablet} {
+    padding: 0;
+  }
+
+  @media #{$bp-width-desktop} {
+    display: flex;
+  }
 }
 
 .contacts__item {
@@ -24,6 +76,16 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 18px;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 28px;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .contacts__label {
@@ -37,6 +99,12 @@
   margin-bottom: 9px;
   line-height: 26px;
 
+  @media #{$bp-width-desktop} {
+    box-sizing: border-box;
+    width: 180px;
+    margin-right: 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -48,6 +116,17 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     z-index: 1;
+
+    @media #{$bp-width-desktop} {
+      bottom: -20px;
+      right: -299px;
+    }
+  }
+
+  &--tel span {
+    @media #{$bp-width-desktop} {
+      display: none;
+    }
   }
 
   &--tel::after {
@@ -74,6 +153,10 @@
   background-color: $mintcream;
   border: none;
   outline: none;
+
+  @media #{$bp-width-desktop} {
+    width: 300px;
+  }
 
   &:hover {
     background-color: $steel;
