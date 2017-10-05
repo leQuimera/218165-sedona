@@ -86,7 +86,7 @@
     background-color: $mintcream;
 
     @media #{$bp-width-tablet} {
-      top: 5px;
+      top: 9px;
     }
   }
 
@@ -107,6 +107,11 @@
     @media #{$bp-width-tablet} {
       top: 23px;
       left: 16px;
+    }
+
+    @media #{$bp-width-desktop} {
+      top: 24px;
+      left: 18px;
     }
   }
 }

@@ -22,21 +22,49 @@
   text-align: center;
 
   @media #{$bp-width-tablet} {
+    margin-bottom: 33px;
+    width: 100%;
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+.places__title-wrap {
+  @media #{$bp-width-tablet} {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 280px;
-    margin-bottom: 33px;
-    font-size: 21px;
   }
 
   &::before,
   &::after {
     @media #{$bp-width-tablet} {
+      content: "";
       flex-grow: 1;
+      flex-shrink: 0;
+      width: 146px;
       height: 1px;
-      width: 40%;
-      background-color: red;
+      background-color: $whitesmoke;
+    }
+
+    @media #{$bp-width-desktop} {
+      width: 305px;
+    }
+  }
+
+  &::before {
+    @media #{$bp-width-tablet} {
+      margin-right: 5px;
+    }
+
+    @media #{$bp-width-desktop} {
+      margin-right: 30px;
+    }
+  }
+
+  &::after {
+    @media #{$bp-width-tablet} {
+      margin-left: 35px;
     }
   }
 }
@@ -51,7 +79,7 @@
     flex-wrap: wrap;
     width: 583px;
     padding-right: 0;
-    padding-left: 61px;
+    padding-left: 97px;
     margin: 0 auto;
   }
 
@@ -77,57 +105,53 @@
   }
 
   @media #{$bp-width-desktop} {
-    width: 25%;
-    margin-right: 0;
+    width: auto;
+    margin-right: 70px;
   }
 
   &:nth-child(even) {
     @media #{$bp-width-tablet} {
       margin-right: 0;
     }
+
+    @media #{$bp-width-desktop} {
+      margin-right: 70px;
+    }
+  }
+
+  &:nth-child(4n) {
+    margin-right: 0;
   }
 
   &:nth-child(1) {
     @media #{$bp-width-tablet} {
-      order: 0;
+      order: -1;
       margin-right: 61px;
     }
 
     @media #{$bp-width-desktop} {
-      margin-right: 0;
+      margin-right: 70px;
     }
   }
 
   &:nth-child(2) {
     @media #{$bp-width-tablet} {
-      order: 2;
       margin-right: 61px;
     }
 
     @media #{$bp-width-desktop} {
-      margin-right: 0;
+      margin-right: 70px;
     }
   }
 
   &:nth-child(3) {
     @media #{$bp-width-tablet} {
-      order: 1;
+      order: -1;
       margin-right: 0;
     }
 
     @media #{$bp-width-desktop} {
-      margin-right: 0;
-    }
-  }
-
-  &:nth-child(4) {
-    @media #{$bp-width-tablet} {
-      order: 3;
-      margin-right: 0;
-    }
-
-    @media #{$bp-width-desktop} {
-      margin-right: 0;
+      margin-right: 73px;
     }
   }
 }

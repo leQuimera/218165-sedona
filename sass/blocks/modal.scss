@@ -16,11 +16,16 @@
       width: 648px;
     }
   }
+
+  &__closed {
+    display: none;
+  }
 }
 
 .modal__btn {
   @include btn();
   margin: 0 auto;
+  padding-top: 0;
 }
 
 .modal__message {

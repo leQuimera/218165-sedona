@@ -32,7 +32,12 @@
 
   &--form {
     @media #{$bp-width-tablet} {
-      margin-right: -15px;
+      margin-right: -6px;
+    }
+
+    @media #{$bp-width-desktop} {
+      margin-left: 71px;
+      margin-right: -101px;
     }
   }
 }
