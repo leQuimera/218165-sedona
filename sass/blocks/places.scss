@@ -6,26 +6,26 @@
   @media #{$bp-width-tablet} {
     order: 4;
     width: 100%;
-    margin-bottom: 27px;
+    margin-bottom: 43px;
     border: none;
+  }
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 41px;
   }
 }
 
 .places__title {
-  padding-top: 18px;
-  margin: 0 auto;
+  @include form-title();
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.01em;
-  text-align: center;
 
   @media #{$bp-width-tablet} {
-    margin-bottom: 33px;
+    margin-bottom: 36px;
     width: 100%;
-    font-size: 21px;
-    text-align: center;
+  }
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 36px;
   }
 }
 
@@ -92,6 +92,7 @@
 .places__item {
   position: relative;
   display: flex;
+  box-sizing: border-box;
   width: 100%;
   margin-bottom: 11px;
   align-items: center;
@@ -106,17 +107,7 @@
 
   @media #{$bp-width-desktop} {
     width: auto;
-    margin-right: 70px;
-  }
-
-  &:nth-child(even) {
-    @media #{$bp-width-tablet} {
-      margin-right: 0;
-    }
-
-    @media #{$bp-width-desktop} {
-      margin-right: 70px;
-    }
+    margin-right: auto;
   }
 
   &:nth-child(4n) {
@@ -126,32 +117,12 @@
   &:nth-child(1) {
     @media #{$bp-width-tablet} {
       order: -1;
-      margin-right: 61px;
-    }
-
-    @media #{$bp-width-desktop} {
-      margin-right: 70px;
-    }
-  }
-
-  &:nth-child(2) {
-    @media #{$bp-width-tablet} {
-      margin-right: 61px;
-    }
-
-    @media #{$bp-width-desktop} {
-      margin-right: 70px;
     }
   }
 
   &:nth-child(3) {
     @media #{$bp-width-tablet} {
       order: -1;
-      margin-right: 0;
-    }
-
-    @media #{$bp-width-desktop} {
-      margin-right: 73px;
     }
   }
 }
@@ -160,7 +131,7 @@
   display: block;
   position: relative;
   padding: 16px 0;
-  padding-left: 78px;
+  padding-left: 80px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -207,8 +178,16 @@
   }
 }
 
-.places__check:hover + .places__label::before,
+.places__check:hover + .places__label::before {
+  background-color: $steel;
+}
+
 .places__check:active + .places__label::before,
 .places__check:focus + .places__label::before {
-  background-color: $steel;
+  background-color: $lightgray;
+}
+
+.places__check:active + .places__label::after,
+.places__check:focus + .places__label::after {
+  border-color: $lightslategray;
 }

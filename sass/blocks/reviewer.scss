@@ -10,6 +10,10 @@
     margin-bottom: 55px;
   }
 
+  @media #{$bp-width-desktop} {
+    margin-bottom: 53px;
+  }
+
   &::before {
     @media #{$bp-width-tablet} {
       content: "";
@@ -24,22 +28,19 @@
 }
 
 .reviewer__title {
-  margin: 0 auto;
+  @include form-title();
   margin-bottom: 14px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.01em;
 
   @media #{$bp-width-tablet} {
-    padding-left: 55px;
+    padding-left: 57px;
+    text-align: left;
     margin-left: 0;
     margin-bottom: 49px;
-    font-size: 21px;
+    letter-spacing: 0.02em;
   }
 
   @media #{$bp-width-desktop} {
-    padding-left: 81px;
+    padding-left: 79px;
   }
 }
 
@@ -54,7 +55,7 @@
   }
 
   @media #{$bp-width-desktop} {
-    padding-left: 82px;
+    padding-left: 80px;
   }
 }
 

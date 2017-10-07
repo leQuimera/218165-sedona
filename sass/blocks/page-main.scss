@@ -1,9 +1,10 @@
 .page-main {
-  padding-top: 7px;
+  padding-top: 4px;
   margin-bottom: 34px;
   text-align: center;
 
   @media #{$bp-width-tablet} {
+    padding-top: 7px;
     margin-bottom: 22px;
   }
 
@@ -14,7 +15,7 @@
 
 .page-main__header {
   padding: 0 20px;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   text-align: center;
 
   @media #{$bp-width-tablet} {
@@ -28,7 +29,7 @@
 
 .page-main__title {
   margin-top: -1px;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

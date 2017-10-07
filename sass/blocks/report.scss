@@ -1,5 +1,5 @@
 .report {
-  padding-top: 18px;
+  padding-top: 19px;
   text-align: left;
   border-top: 1px solid $steel;
 
@@ -56,17 +56,11 @@
 }
 
 .report__title {
-  padding-top: 18px;
-  margin: 0 auto;
+  @include form-title();
   margin-bottom: 14px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.01em;
 
   @media #{$bp-width-tablet} {
     margin-bottom: 57px;
-    font-size: 21px;
   }
 }
 
@@ -120,7 +114,12 @@
   color: $black;
 
   @media #{$bp-width-tablet} {
-    padding-top: 15px;
+    padding-top: 16px;
+    padding-left: 22px;
+  }
+
+  &:hover {
+    background-color: $steel;
   }
 
   &:focus {
@@ -141,7 +140,7 @@
   }
 
   @media #{$bp-width-desktop} {
-    width: 475px;
+    width: 479px;
   }
 }
 

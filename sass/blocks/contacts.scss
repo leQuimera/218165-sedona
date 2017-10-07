@@ -2,33 +2,29 @@
   margin-bottom: 12px;
   border-bottom: 1px solid $steel;
 
-
   @media #{$bp-width-tablet} {
     order: 3;
     width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 27px;
     border: none;
+  }
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 26px;
   }
 }
 
 .contacts__title {
-  padding-top: 18px;
-  margin: 0 auto;
+  @include form-title();
   margin-bottom: 24px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.01em;
 
   @media #{$bp-width-tablet} {
-    padding: 0;
     margin-bottom: 30px;
     width: 100%;
-    font-size: 21px;
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 76px;
+    margin-bottom: 78px;
   }
 }
 
@@ -124,55 +120,59 @@
   width: 100%;
   box-sizing: border-box;
   padding-top: 14px;
-  padding-left: 22px;
+  padding-left: 24px;
   padding-bottom: 14px;
-  padding-right: 60px;
+  padding-right: 58px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $black;
-
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 92% 50%;
   border: none;
   outline: none;
 
-  @media #{$bp-width-desktop} {
-    width: 313px;
+  @media #{$bp-width-tablet} {
+    background-position: 97% 50%;
   }
 
-  &:hover {
-    background-color: $steel;
+  @media #{$bp-width-desktop} {
+    width: 320px;
+    background-position: 93% 50%;
   }
 
   &:active,
   &:focus {
-    background-color: $white;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='18px' height='18px' viewBox='0 0 18 18' enable-background='new 0 0 18 18' xml:space='preserve'%3E%3Cg id='Page-1'%3E%3Cg id='Icons-Communication' transform='translate%28-85.000000, -126.000000%29'%3E%3Cg id='phone' transform='translate%2885.000000, 126.000000%29'%3E%3Cpath id='Shape' fill='%23000000' d='M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"), linear-gradient(to left, $lightgray 58px, $white 58px);
     outline: 4px solid $steel;
   }
 
   &--tel {
     background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='18px' height='18px' viewBox='0 0 18 18' enable-background='new 0 0 18 18' xml:space='preserve'%3E%3Cg id='Page-1'%3E%3Cg id='Icons-Communication' transform='translate%28-85.000000, -126.000000%29'%3E%3Cg id='phone' transform='translate%2885.000000, 126.000000%29'%3E%3Cpath id='Shape' fill='%23000000' d='M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"), linear-gradient(to left, $lightgray 58px, $mintcream 58px);
 
-    @media #{$bp-width-tablet} {
-      background-position: 97% 50%;
+    &:hover {
+      background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='18px' height='18px' viewBox='0 0 18 18' enable-background='new 0 0 18 18' xml:space='preserve'%3E%3Cg id='Page-1'%3E%3Cg id='Icons-Communication' transform='translate%28-85.000000, -126.000000%29'%3E%3Cg id='phone' transform='translate%2885.000000, 126.000000%29'%3E%3Cpath id='Shape' fill='%23000000' d='M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"), linear-gradient(to left, $lightgray 58px, $steel 58px);
     }
 
-    @media #{$bp-width-desktop} {
-      background-position: 94% 50%;
+    &:active,
+    &:focus {
+      background-image: url("data:image/svg+xml,%3Csvg version='1.0' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='18px' height='18px' viewBox='0 0 18 18' enable-background='new 0 0 18 18' xml:space='preserve'%3E%3Cg id='Page-1'%3E%3Cg id='Icons-Communication' transform='translate%28-85.000000, -126.000000%29'%3E%3Cg id='phone' transform='translate%2885.000000, 126.000000%29'%3E%3Cpath id='Shape' fill='%23000000' d='M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"), linear-gradient(to left, $lightgray 58px, $white 58px);
+      outline: 4px solid $steel;
     }
   }
 
   &--email {
     background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 16 16' enable-background='new 0 0 16 16' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z'/%3E%3C/svg%3E%0A"), linear-gradient(to left, $lightgray 58px, $mintcream 58px);
 
-    @media #{$bp-width-tablet} {
-      background-position: 97% 50%;
+    &:hover {
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 16 16' enable-background='new 0 0 16 16' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z'/%3E%3C/svg%3E%0A"), linear-gradient(to left, $lightgray 58px, $steel 58px);
     }
 
-    @media #{$bp-width-desktop} {
-      background-position: 94% 50%;
+    &:active,
+    &:focus {
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 16 16' enable-background='new 0 0 16 16' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z'/%3E%3C/svg%3E%0A"), linear-gradient(to left, $lightgray 58px, $white 58px);
+      outline: 4px solid $steel;
     }
   }
 }
