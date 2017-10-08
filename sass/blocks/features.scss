@@ -1,7 +1,8 @@
 .features {
   padding-top: 11px;
   padding-right: 20px;
-  padding-left: 71px;
+  padding-left: 69px;
+  margin-bottom: 38px;
   text-align: left;
 
   @media #{$bp-width-tablet} {
@@ -11,12 +12,12 @@
     padding-top: 130px;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: -3px;
+    margin-bottom: 33px;
     text-align: center;
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 }
 
@@ -131,5 +132,13 @@
 
   @media #{$bp-width-tablet} {
     padding: 0 50px;
+  }
+
+  & br {
+    display: none;
+
+    @media #{$bp-width-desktop} {
+      display: block;
+    }
   }
 }

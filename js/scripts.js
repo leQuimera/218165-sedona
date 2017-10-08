@@ -1,15 +1,31 @@
 'use strict';
 
-(function() {
-  var navigation = document.querySelector('.page-nav');
-  var toggler = navigation.querySelector('.page-nav__toggle');
-  var menuList = navigation.querySelector('.page-nav__list');
+var toggler = document.querySelector('.page-nav__toggle');
 
-  var onMenuOperation = function (evt) {
-    evt.preventDefault();
-    menuList.classList.toggle('page-nav__list--closed');
-    toggler.classList.toggle('page-nav__toggle--closed');
+function initMap() {
+  var mapOptions = {
+    zoom: 7,
+    center: {lat: 34.857323, lng: -111.794933},
+    disableDefaultUI: true
   }
 
-  toggler.addEventListener('click', onMenuOperation);
-})();
+  var map = new google.maps.Map(document.querySelector('.driving__map'), mapOptions);
+  var image = "img/icon-map-pin.svg";
+  var myLatLng = new google.maps.LatLng(34.857323, -111.794933);
+  var beachMarker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP
+  });
+}
+
+var onMenuOperation = function (evt) {
+  var menuList = document.querySelector('.page-nav__list');
+
+  evt.preventDefault();
+  menuList.classList.toggle('page-nav__list--closed');
+  toggler.classList.toggle('page-nav__toggle--closed');
+}
+
+toggler.addEventListener('click', onMenuOperation);

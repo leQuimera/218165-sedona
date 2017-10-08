@@ -9,6 +9,7 @@
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  overflow: hidden;
 
   &::before,
   &::after {

@@ -58,8 +58,8 @@
   }
 
   @media #{$bp-width-desktop} {
-    margin-left: 44px;
-    margin-right: 42px;
+    margin-left: 42px;
+    margin-right: 44px;
   }
 
   &:nth-child(2) {
@@ -91,6 +91,7 @@
     font-size: 14px;
     line-height: 26px;
     color: $black;
+    background-color: $white;
     border: none;
   }
 

@@ -17,7 +17,7 @@
   padding-top: 1px;
   padding-right: 10px;
   padding-left: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-weight: 800;
   font-size: 21px;
   line-height: 26px;
@@ -41,7 +41,15 @@
 
   @media #{$bp-width-desktop} {
     padding: 0 220px;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
+  }
+
+  & br {
+    display: none;
+
+    @media #{$bp-width-tablet} {
+      display: inline;
+    }
   }
 }
 
