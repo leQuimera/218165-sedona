@@ -1,22 +1,40 @@
 .impression {
   padding-bottom: 22px;
   border-bottom: 1px solid $steel;
+
+
+  @media #{$bp-width-tablet} {
+    order: 1;
+    border: none;
+  }
 }
 
 .impression__title {
-  padding-top: 18px;
-  margin: 0 auto;
+  @include form-title();
   margin-bottom: 14px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.01em;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 51px;
+    text-align: left;
+  }
+
+  @media #{$bp-width-desktop} {
+    padding-left: 80px;
+  }
 }
 
 .impression__list {
   @include clear-list();
   padding-left: 20px;
   padding-right: 20px;
+
+  @media #{$bp-width-tablet} {
+    padding: 0;
+  }
+
+  @media #{$bp-width-desktop} {
+    padding-left: 4px;
+  }
 }
 
 .impression__item {
@@ -26,6 +44,10 @@
   align-items: center;
   min-height: 69px;
   cursor: pointer;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 9px;
+  }
 }
 
 .impression__label {
@@ -36,9 +58,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  letter-spacing: 0.01em;
   color: $black;
   text-transform: none;
   cursor: pointer;
+
+  @media #{$bp-width-tablet} {
+    padding: 20px 0;
+    padding-left: 75px;
+  }
 
   &::before {
     content: "";
@@ -50,6 +78,10 @@
     left: 0;
     border-radius: 50%;
     background-color: $mintcream;
+
+    @media #{$bp-width-tablet} {
+      top: 4px;
+    }
   }
 
   &::after {
@@ -65,6 +97,16 @@
     border-radius: 50%;
     transition: all 0.2s;
     opacity: 0;
+
+    @media #{$bp-width-tablet} {
+      top: 19px;
+      left: 16px;
+    }
+
+    @media #{$bp-width-desktop} {
+      top: 21px;
+      left: 17px;
+    }
   }
 }
 
@@ -79,8 +121,16 @@
   }
 }
 
-.impression__radio:hover + .impression__label::before,
+.impression__radio:hover + .impression__label::before {
+  background-color: $steel;
+}
+
 .impression__radio:active + .impression__label::before,
 .impression__radio:focus + .impression__label::before {
-  background-color: $steel;
+  background-color: $lightgray;
+}
+
+.impression__radio:active + .impression__label::after,
+.impression__radio:focus + .impression__label::after {
+  background-color: $lightslategray;
 }

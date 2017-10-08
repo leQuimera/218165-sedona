@@ -1,9 +1,11 @@
+// Сброс настроек для списка
 @mixin clear-list() {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+// Оформление кнопки
 @mixin btn() {
   display: block;
   box-sizing: border-box;
@@ -31,5 +33,18 @@
 
   &:disabled {
     background-color: $cadetblue;
+  }
+}
+
+// Оформление заголовка на странице формы
+@mixin form-title() {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  @media #{$bp-width-tablet} {
+    font-size: 21px;
   }
 }

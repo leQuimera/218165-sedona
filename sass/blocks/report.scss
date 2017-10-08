@@ -1,7 +1,24 @@
 .report {
-  padding-top: 18px;
+  padding-top: 19px;
   text-align: left;
   border-top: 1px solid $steel;
+
+
+  @media #{$bp-width-tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    padding-top: 16px;
+    margin: 0 auto;
+    margin-bottom: 86px;
+    border: none;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 960px;
+    padding-top: 1px;
+    margin-bottom: 89px;
+  }
 }
 
 .report__fieldset {
@@ -10,21 +27,77 @@
   padding: 0;
   border: none;
 
+  @media #{$bp-width-tablet} {
+    width: 50%;
+  }
+
   &--effect {
     width: 280px;
     margin: 0 auto;
     margin-bottom: 47px;
+
+
+    @media #{$bp-width-tablet} {
+      order: 5;
+      width: 100%;
+      margin-bottom: 51px;
+    }
+  }
+
+  &--btn-wrapper {
+    @media #{$bp-width-tablet} {
+      order: 6;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 }
 
 .report__title {
-  padding-top: 18px;
-  margin: 0 auto;
+  @include form-title();
   margin-bottom: 14px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: 0.01em;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 57px;
+  }
+}
+
+.report__title-wrap {
+  @media #{$bp-width-tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &::before,
+  &::after {
+    @media #{$bp-width-tablet} {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 146px;
+      height: 1px;
+      background-color: $whitesmoke;
+    }
+
+    @media #{$bp-width-desktop} {
+      width: 305px;
+    }
+  }
+
+  &::before {
+    @media #{$bp-width-tablet} {
+      margin-right: 35px;
+    }
+  }
+
+  &::after {
+    @media #{$bp-width-tablet} {
+      margin-left: 35px;
+    }
+  }
 }
 
 .report__textarea {
@@ -32,7 +105,7 @@
   box-sizing: border-box;
   min-height: 160px;
   padding: 18px;
-  background-color: #f2f2f2;
+  background-color: $mintcream;
   border: none;
   font-size: 18px;
   font-weight: 700;
@@ -40,9 +113,18 @@
   font-family: inherit;
   color: $black;
 
+  @media #{$bp-width-tablet} {
+    padding-top: 16px;
+    padding-left: 22px;
+  }
+
+  &:hover {
+    background-color: $steel;
+  }
+
   &:focus {
-    background-color: #ffffff;
-    outline: 4px solid #e5e5e5;
+    background-color: $white;
+    outline: 4px solid $steel;
   }
 }
 
@@ -50,8 +132,22 @@
   @include btn();
   margin: 0 auto;
   padding-top: 5px;
+
+  @media #{$bp-width-tablet} {
+    padding: 0;
+    margin: 0;
+    width: 322px;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 479px;
+  }
 }
 
 .report__legend {
   display: none;
+
+  @media #{$bp-width-tablet} {
+    display: block;
+  }
 }

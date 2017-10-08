@@ -8,6 +8,7 @@
   min-height: 350px;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   &::before,
   &::after {
@@ -22,8 +23,8 @@
   }
 
   &::after {
-    top: 166px;
-    left: 152px;
+    top: 48%;
+    left: 48%;
     width: 17px;
     height: 17px;
     background-color: $steelblue;

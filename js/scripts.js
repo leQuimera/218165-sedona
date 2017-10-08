@@ -7,10 +7,9 @@
 
   var onMenuOperation = function (evt) {
     evt.preventDefault();
-      menuList.classList.toggle('page-nav__list--closed');
-      toggler.classList.toggle('page-nav__toggle--closed');
+    menuList.classList.toggle('page-nav__list--closed');
+    toggler.classList.toggle('page-nav__toggle--closed');
   }
 
   toggler.addEventListener('click', onMenuOperation);
-
 })();

@@ -4,13 +4,43 @@
   text-align: center;
   border-top: 1px solid $steel;
   border-bottom: 1px solid $steel;
+
+  @media #{$bp-width-tablet} {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &--sended {
+    @media #{$bp-width-tablet} {
+      width: 648px;
+    }
+  }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .modal__btn {
   @include btn();
   margin: 0 auto;
+  padding-top: 0;
 }
 
 .modal__message {
   margin-bottom: 30px;
+
+  @media #{$bp-width-tablet} {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
+
+  &--sended {
+    @media #{$bp-width-tablet} {
+      width: 420px;
+      margin-bottom: 80px;
+    }
+  }
 }

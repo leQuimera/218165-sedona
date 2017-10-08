@@ -2,6 +2,20 @@
   width: 100%;
   text-align: center;
   background-color: $ghostwhite;
+
+  @media #{$bp-width-tablet} {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 56px;
+  }
+
+  @media #{$bp-width-desktop} {
+    padding-right: 36px;
+  }
 }
 
 .page-footer__hashtag {
@@ -10,6 +24,22 @@
   font-size: 21px;
   line-height: 26px;
   color: $black;
+
+  @media #{$bp-width-desktop} {
+    margin-left: 74px;
+    margin-right: -98px;
+  }
+
+  &--form {
+    @media #{$bp-width-tablet} {
+      margin-right: -6px;
+    }
+
+    @media #{$bp-width-desktop} {
+      margin-left: 71px;
+      margin-right: -101px;
+    }
+  }
 }
 
 .page-footer__copyright {
@@ -30,6 +60,7 @@
   width: 35px;
   height: 35px;
   margin-top: -4px;
+  margin-left: 7px;
 }
 
 .page-footer__copyright-icon:hover {

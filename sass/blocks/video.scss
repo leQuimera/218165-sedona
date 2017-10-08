@@ -1,5 +1,13 @@
 .video {
   margin-bottom: 73px;
+
+  @media #{$bp-width-tablet} {
+    margin-bottom: 63px;
+  }
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 109px;
+  }
 }
 
 .video__subtitle {
@@ -7,11 +15,26 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media #{$bp-width-tablet} {
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
 }
 
 .video__lead {
   padding: 0 25px;
   margin-bottom: 35px;
+
+  @media #{$bp-width-tablet} {
+    padding: 0 162px;
+    margin-bottom: 71px;
+  }
+
+  @media #{$bp-width-desktop} {
+    padding: 0 378px;
+    margin-bottom: 69px;
+  }
 }
 
 .video__content {
@@ -20,6 +43,17 @@
   background-image: url("../img/video-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media #{$bp-width-tablet} {
+    position: relative;
+    width: 648px;
+    padding-top: 500px;
+    margin: 0 auto;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 800px;
+  }
 }
 
 .video__rotor {
@@ -27,8 +61,19 @@
   width: 280px;
   height: 45px;
   margin: 0 auto;
+  margin-top: 1px;
   background-color: $black;
   opacity: 0.6;
+
+  @media #{$bp-width-tablet} {
+    width: 648px;
+    height: 91px;
+    margin-top: -90px;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 800px;
+  }
 
   &::before {
     content: "";
@@ -40,6 +85,16 @@
     z-index: 1;
     background-color: $white;
     opacity: 0.3;
+
+    @media #{$bp-width-tablet} {
+      width: 390px;
+      top: 44px;
+      left: 91px;
+    }
+
+    @media #{$bp-width-desktop} {
+      width: 540px;
+    }
   }
 }
 
@@ -52,6 +107,11 @@
   background-color: $white;
   border-radius: 50%;
   z-index: 5;
+
+  @media #{$bp-width-tablet} {
+    top: 40px;
+    left: 204px;
+  }
 }
 
 .video__panel {
@@ -61,6 +121,18 @@
   height: 66px;
   margin: 0 auto;
   background-color: $mintcream;
+
+  @media #{$bp-width-tablet} {
+    position: absolute;
+    bottom: 12px;
+    left: 7px;
+    width: 622px;
+    background-color: transparent;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 773px;
+  }
 }
 
 .video__control {
@@ -80,6 +152,10 @@
 
 .header-services__icon {
   fill: $darkgray;
+
+  @media #{$bp-width-tablet} {
+    fill: $white;
+  }
 
   &:hover {
     fill: $dimgray;

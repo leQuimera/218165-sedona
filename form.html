@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -83,15 +84,15 @@
       <!-- Блок контактной информации ревьювера-->
       <!-- Текстовые поля -->
       <fieldset class="report__fieldset contacts">
-        <legend class="contacts__title">Контактная информация:</legend>
+        <legend class="contacts__title"><span class="contacts__title-wrap">Контактная информация:</span></legend>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <label class="contacts__label contacts__label--tel" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
-            <input class="contacts__input" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
+            <label class="contacts__label" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
+            <input class="contacts__input contacts__input--tel" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
           </li>
           <li class="contacts__item">
-            <label class="contacts__label contacts__label--email" for="email">Электронная почта<sup>*</sup>: </label>
-            <input class="contacts__input" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+            <label class="contacts__label" for="email">Электронная почта<sup>*</sup>: </label>
+            <input class="contacts__input contacts__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
           </li>
         </ul>
       </fieldset>
@@ -121,11 +122,11 @@
       <!-- Блок мест, посещенных ревьювером -->
       <!-- Выбор чек-боксы -->
       <fieldset class="report__fieldset places">
-        <legend class="places__title">Посещенные достопримечательности:</legend>
+        <legend class="places__title"><span class="places__title-wrap">Посещенные достопримечательности:</span></legend>
         <ul class="places__list">
           <li class="places__item">
             <input class="places__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked>
-            <label class="places__label" for="visit1">Мост Дьявола</label>
+            <label class="places__label" for="visit1">Мост&nbsp;Дьявола</label>
           </li>
           <li class="places__item">
             <input class="places__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked>
@@ -137,7 +138,7 @@
           </li>
           <li class="places__item">
             <input class="places__check" type="checkbox" name="visited" value="Красные скалы" id="visit4">
-            <label class="places__label" for="visit4">Красные скалы</label>
+            <label class="places__label" for="visit4">Красные&nbsp;скалы</label>
           </li>
         </ul>
       </fieldset>
@@ -146,18 +147,19 @@
       <!-- Отзыв ревьювером -->
       <!-- Текстовое поле -->
       <fieldset class="report__fieldset report__fieldset--effect">
-        <legend class="report__title">Опишите свои эмоции:</legend>
+        <legend class="report__title"><span class="report__title-wrap">Опишите свои эмоции:</span></legend>
         <textarea name="effect" class="report__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <!-- //Отзыв ревьювером -->
-
-      <button class="report__btn" type="submit">Отправить отзыв</button>
-      <p class="report__legend">* - обязательные поля</p>
+      <div class="report__fieldset report__fieldset--btn-wrapper">
+        <button class="report__btn" type="submit">Отправить отзыв</button>
+        <p class="report__legend">* - обязательные поля</p>
+      </div>
     </form>
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__hashtag">#visitsedona</p>
+    <p class="page-footer__hashtag page-footer__hashtag--form">#visitsedona</p>
     <section class="page-footer__social socials">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">
@@ -191,7 +193,7 @@
   </footer>
 
   <!-- Модальное окно: ошибка -->
-  <div class="modal" id="js-modal-error">
+  <div class="modal modal--closed" id="js-modal-error">
     <h2 class="modal__title">Что-то пошло не так!</h2>
     <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="modal__btn" type="button">Ok</button>
@@ -199,9 +201,9 @@
   <!-- //Модальное окно: ошибка -->
 
   <!-- Модальное окно: отправка отзыва -->
-  <div class="modal" id="js-modal-sended">
+  <div class="modal modal--closed modal--sended" id="js-modal-sended">
     <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-    <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <p class="modal__message modal__message--sended">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
     <button class="modal__btn" type="button">Закрыть окно</button>
   </div>
   <!-- //Модальное окно: отправка отзыва -->

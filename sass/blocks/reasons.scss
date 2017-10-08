@@ -1,11 +1,20 @@
 .reasons {
   margin-bottom: 25px;
+
+  @media #{$bp-width-desktop} {
+    margin-bottom: 90px;
+  }
 }
 
 .reasons__header {
   width: 280px;
   margin: 0 auto;
   margin-bottom: 42px;
+
+  @media #{$bp-width-tablet} {
+    width: 495px;
+    margin-bottom: 50px;
+  }
 }
 
 .reasons__title {
@@ -16,6 +25,12 @@
   line-height: 26px;
   text-align: center;
   color: $black;
+
+  @media #{$bp-width-tablet} {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
 }
 
 .reasons__lead {
@@ -25,10 +40,21 @@
 
 .reasons__list {
   @include clear-list();
+
+  @media #{$bp-width-tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 70px;
+  }
 }
 
 .reasons__item {
   position: relative;
+
+  @media #{$bp-width-tablet} {
+    position: initial;
+  }
 }
 
 .reasons__item:first-child::before {
@@ -43,4 +69,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 20px;
+
+  @media #{$bp-width-tablet} {
+    content: none;
+  }
 }
