@@ -9,7 +9,7 @@
 .reasons__header {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 43px;
+  margin-bottom: 41px;
 
   @media #{$bp-width-tablet} {
     width: 495px;
@@ -19,7 +19,7 @@
 
 .reasons__title {
   padding: 0 10px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
@@ -60,7 +60,7 @@
 .reasons__item:first-child::before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -19px;
   left: 0;
   width: 100%;
   background-color: $steelblue;

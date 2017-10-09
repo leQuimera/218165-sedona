@@ -48,3 +48,26 @@
     font-size: 21px;
   }
 }
+
+@mixin lineage($color: $whitesmoke, $mrg-left: 5px, $mrg-right: 5px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 1px;
+    background-color: $color;
+  }
+
+  &::before {
+    margin-right: $mrg-right;
+  }
+
+  &::after {
+    margin-left: $mrg-left;
+  }
+}

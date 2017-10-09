@@ -24,39 +24,13 @@
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 78px;
+    margin-bottom: 76px;
   }
 }
 
 .contacts__title-wrap {
   @media #{$bp-width-tablet} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &::before,
-  &::after {
-    @media #{$bp-width-tablet} {
-      content: "";
-      flex-grow: 1;
-      flex-shrink: 0;
-      width: 20px;
-      height: 1px;
-      background-color: $whitesmoke;
-    }
-  }
-
-  &::before {
-    @media #{$bp-width-tablet} {
-      margin-right: 60px;
-    }
-  }
-
-  &::after {
-    @media #{$bp-width-tablet} {
-      margin-left: 60px;
-    }
+    @include lineage($mrg-left: 60px, $mrg-right: 60px);
   }
 }
 
