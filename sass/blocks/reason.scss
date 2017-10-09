@@ -74,7 +74,7 @@
 }
 
 .reason__description {
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 27px;
   padding-right: 27px;
   padding-bottom: 14px;
@@ -86,7 +86,7 @@
 
   @media #{$bp-width-tablet} {
     justify-content: flex-start;
-    padding-top: 25px;
+    padding-top: 23px;
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 29px;
@@ -136,7 +136,7 @@
   line-height: 21px;
 
   @media #{$bp-width-tablet} {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 
   @media #{$bp-width-desktop} {

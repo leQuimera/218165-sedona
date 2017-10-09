@@ -13,11 +13,11 @@
 .reasons__header {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 41px;
+  margin-bottom: 43px;
 
   @media #{$bp-width-tablet} {
     width: 495px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   @media #{$bp-width-desktop} {
@@ -27,7 +27,7 @@
 
 .reasons__title {
   padding: 0 10px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   font-weight: 800;
   font-size: 18px;
   line-height: 26px;
@@ -67,7 +67,7 @@
 .reasons__item:first-child::before {
   content: "";
   position: absolute;
-  top: -19px;
+  top: -20px;
   left: 0;
   width: 100%;
   background-color: $steelblue;
