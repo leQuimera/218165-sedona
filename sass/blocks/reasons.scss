@@ -1,8 +1,12 @@
 .reasons {
   margin-bottom: 25px;
 
+  @media #{$bp-width-tablet} {
+    margin-bottom: 55px;
+  }
+
   @media #{$bp-width-desktop} {
-    margin-bottom: 90px;
+    margin-bottom: 56px;
   }
 }
 
@@ -13,6 +17,10 @@
 
   @media #{$bp-width-tablet} {
     width: 495px;
+    margin-bottom: 52px;
+  }
+
+  @media #{$bp-width-desktop} {
     margin-bottom: 50px;
   }
 }
@@ -45,7 +53,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 70px;
   }
 }
 

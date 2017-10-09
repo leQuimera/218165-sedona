@@ -10,24 +10,4 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   overflow: hidden;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 46%;
-    left: 46%;
-    width: 27px;
-    height: 27px;
-    border-radius: 50%;
-    background-color: $white;
-  }
-
-  &::after {
-    top: 48%;
-    left: 48%;
-    width: 17px;
-    height: 17px;
-    background-color: $steelblue;
-  }
 }
