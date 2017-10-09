@@ -17,7 +17,7 @@
   @media #{$bp-width-desktop} {
     width: 960px;
     padding-top: 1px;
-    margin-bottom: 89px;
+    margin-bottom: 94px;
   }
 }
 
@@ -75,12 +75,12 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 160px;
-  padding: 18px;
+  padding: 19px;
   background-color: $mintcream;
   border: none;
   font-size: 18px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 26px;
   font-family: inherit;
   color: $black;
 
@@ -102,7 +102,7 @@
 .report__btn {
   @include btn();
   margin: 0 auto;
-  padding-top: 5px;
+  padding-top: 4px;
 
   @media #{$bp-width-tablet} {
     padding: 0;

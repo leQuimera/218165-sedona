@@ -1,8 +1,9 @@
 .modal {
   display: none;
   position: fixed;
-  left: 50vw;
-  top: 50vh;
+  width: 100%;
+  left: 0;
+  top: 150px;
   padding-top: 60px;
   padding-bottom: 35px;
   text-align: center;
@@ -12,6 +13,7 @@
   z-index: 100;
 
   @media #{$bp-width-tablet} {
+    left: 40%;
     width: 400px;
     margin: 0 auto;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
@@ -19,23 +21,13 @@
 
   &--sended {
     @media #{$bp-width-tablet} {
+      left: 30%;
       width: 648px;
     }
   }
 
   &--open {
     display: block;
-  }
-
-  &::before {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 40;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 

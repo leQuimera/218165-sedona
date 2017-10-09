@@ -1,5 +1,5 @@
 .places {
-  margin-bottom: 9px;
+  margin-bottom: 27px;
   border-bottom: 1px solid $steel;
 
 
@@ -17,7 +17,7 @@
 
 .places__title {
   @include form-title();
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   @media #{$bp-width-tablet} {
     width: 100%;
@@ -25,7 +25,7 @@
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 }
 
@@ -36,6 +36,10 @@
 
   &::before,
   &::after {
+    @media #{$bp-width-tablet} {
+      width: 123px;
+    }
+
     @media #{$bp-width-desktop} {
       width: 305px;
     }
@@ -44,6 +48,7 @@
 
 .places__list {
   @include clear-list();
+  box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -52,7 +57,7 @@
     flex-wrap: wrap;
     width: 583px;
     padding-right: 0;
-    padding-left: 97px;
+    padding-left: 61px;
     margin: 0 auto;
   }
 
@@ -103,7 +108,7 @@
 .places__label {
   display: block;
   position: relative;
-  padding: 16px 0;
+  padding: 15px 0;
   padding-left: 80px;
   font-weight: 700;
   font-size: 18px;
