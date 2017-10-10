@@ -34,21 +34,21 @@
 
   @media #{$bp-width-tablet} {
     width: 324px;
+    height: 267px;
   }
 
   @media #{$bp-width-desktop} {
     width: 400px;
-    height: 267px;
   }
 
   &--grand {
     @media #{$bp-width-tablet} {
       width: 648px;
+      height: 400px;
     }
 
     @media #{$bp-width-desktop} {
       width: $dsk-width;
-      height: 400px;
     }
   }
 }
@@ -62,7 +62,7 @@
     align-items: flex-end;
     padding-left: 20px;
     padding-right: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
     background-color: $ghostwhite;
   }
 
