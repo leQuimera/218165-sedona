@@ -14,16 +14,20 @@
   }
 
   @media #{$bp-width-desktop} {
-    padding-right: 36px;
+    padding-right: 40px;
   }
 }
 
 .page-footer__hashtag {
-  margin-bottom: 39px;
+  margin-bottom: 36px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: $black;
+
+  @media #{$bp-width-tablet} {
+    margin-right: -8px;
+  }
 
   @media #{$bp-width-desktop} {
     margin-left: 74px;
@@ -50,7 +54,6 @@
 }
 
 .page-footer__text {
-  margin-right: 9px;
   color: $black;
 }
 

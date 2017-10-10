@@ -1,10 +1,11 @@
 .impression {
-  padding-bottom: 22px;
+  padding-bottom: 23px;
+  margin-bottom: 17px;
   border-bottom: 1px solid $steel;
-
 
   @media #{$bp-width-tablet} {
     order: 1;
+    padding-bottom: 0;
     border: none;
   }
 }
@@ -20,6 +21,7 @@
 
   @media #{$bp-width-desktop} {
     padding-left: 80px;
+    letter-spacing: normal;
   }
 }
 
@@ -53,7 +55,7 @@
 .impression__label {
   display: block;
   position: relative;
-  padding: 16px 0;
+  padding: 15px 0;
   padding-left: 78px;
   font-weight: 700;
   font-size: 18px;
@@ -74,13 +76,13 @@
     display: block;
     width: 54px;
     height: 54px;
-    top: 0;
+    top: 2px;
     left: 0;
     border-radius: 50%;
     background-color: $mintcream;
 
     @media #{$bp-width-tablet} {
-      top: 4px;
+      top: 7px;
     }
   }
 
@@ -91,15 +93,15 @@
     display: block;
     width: 22px;
     height: 22px;
-    top: 17px;
-    left: 17px;
+    top: 19px;
+    left: 18px;
     background-color: $dimgray;
     border-radius: 50%;
     transition: all 0.2s;
     opacity: 0;
 
     @media #{$bp-width-tablet} {
-      top: 19px;
+      top: 24px;
       left: 16px;
     }
 

@@ -2,6 +2,7 @@
   padding-top: 11px;
   padding-right: 20px;
   padding-left: 71px;
+  margin-bottom: 36px;
   text-align: left;
 
   @media #{$bp-width-tablet} {
@@ -11,12 +12,13 @@
     padding-top: 130px;
     padding-right: 0;
     padding-left: 0;
-    margin-bottom: -3px;
+    margin-bottom: 33px;
     text-align: center;
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 52px;
+    padding-top: 132px;
+    margin-bottom: 54px;
   }
 }
 
@@ -48,7 +50,7 @@
     position: absolute;
     width: 38px;
     height: 38px;
-    background-color: $white;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -127,9 +129,17 @@
 
 .features__text {
   line-height: 21px;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   @media #{$bp-width-tablet} {
     padding: 0 50px;
+  }
+
+  & br {
+    display: none;
+
+    @media #{$bp-width-desktop} {
+      display: block;
+    }
   }
 }

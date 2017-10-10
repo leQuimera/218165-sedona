@@ -9,9 +9,8 @@
 @mixin btn() {
   display: block;
   box-sizing: border-box;
-  width: 280px;
   min-height: 57px;
-  padding-top: 14px;
+  padding: 16px 15px;
   background-color: $steelblue;
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: 700;
@@ -21,6 +20,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $slategray;
@@ -38,6 +38,7 @@
 
 // Оформление заголовка на странице формы
 @mixin form-title() {
+  width: 100%;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -46,5 +47,28 @@
 
   @media #{$bp-width-tablet} {
     font-size: 21px;
+  }
+}
+
+@mixin lineage($color: $whitesmoke, $mrg-left: 5px, $mrg-right: 5px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 1px;
+    background-color: $color;
+  }
+
+  &::before {
+    margin-right: $mrg-right;
+  }
+
+  &::after {
+    margin-left: $mrg-left;
   }
 }

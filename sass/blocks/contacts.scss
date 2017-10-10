@@ -1,10 +1,12 @@
 .contacts {
-  margin-bottom: 12px;
+  padding-bottom: 11px;
+  margin-bottom: 18px;
   border-bottom: 1px solid $steel;
 
   @media #{$bp-width-tablet} {
     order: 3;
     width: 100%;
+    padding-bottom: 0;
     margin-bottom: 27px;
     border: none;
   }
@@ -16,47 +18,21 @@
 
 .contacts__title {
   @include form-title();
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   @media #{$bp-width-tablet} {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     width: 100%;
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 78px;
+    margin-bottom: 75px;
   }
 }
 
 .contacts__title-wrap {
   @media #{$bp-width-tablet} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &::before,
-  &::after {
-    @media #{$bp-width-tablet} {
-      content: "";
-      flex-grow: 1;
-      flex-shrink: 0;
-      width: 20px;
-      height: 1px;
-      background-color: $whitesmoke;
-    }
-  }
-
-  &::before {
-    @media #{$bp-width-tablet} {
-      margin-right: 60px;
-    }
-  }
-
-  &::after {
-    @media #{$bp-width-tablet} {
-      margin-left: 60px;
-    }
+    @include lineage($mrg-left: 60px, $mrg-right: 60px);
   }
 }
 
@@ -96,10 +72,10 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  padding-left: 21px;
+  padding-left: 23px;
   margin-top: -3px;
   margin-right: 14px;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   line-height: 26px;
 
   @media #{$bp-width-desktop} {
@@ -119,9 +95,9 @@
 .contacts__input {
   width: 100%;
   box-sizing: border-box;
-  padding-top: 14px;
+  padding-top: 15px;
   padding-left: 24px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
   padding-right: 58px;
   font-family: inherit;
   font-weight: 700;
@@ -134,11 +110,13 @@
   outline: none;
 
   @media #{$bp-width-tablet} {
+    padding-left: 21px;
     background-position: 97% 50%;
   }
 
   @media #{$bp-width-desktop} {
     width: 320px;
+    padding-left: 24px;
     background-position: 93% 50%;
   }
 

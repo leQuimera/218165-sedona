@@ -1,8 +1,8 @@
 .report {
   padding-top: 19px;
+  margin-bottom: 73px;
   text-align: left;
   border-top: 1px solid $steel;
-
 
   @media #{$bp-width-tablet} {
     display: flex;
@@ -17,7 +17,7 @@
   @media #{$bp-width-desktop} {
     width: 960px;
     padding-top: 1px;
-    margin-bottom: 89px;
+    margin-bottom: 90px;
   }
 }
 
@@ -60,43 +60,14 @@
   margin-bottom: 14px;
 
   @media #{$bp-width-tablet} {
+    width: 100%;
     margin-bottom: 57px;
   }
 }
 
 .report__title-wrap {
   @media #{$bp-width-tablet} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &::before,
-  &::after {
-    @media #{$bp-width-tablet} {
-      content: "";
-      flex-grow: 1;
-      flex-shrink: 0;
-      width: 146px;
-      height: 1px;
-      background-color: $whitesmoke;
-    }
-
-    @media #{$bp-width-desktop} {
-      width: 305px;
-    }
-  }
-
-  &::before {
-    @media #{$bp-width-tablet} {
-      margin-right: 35px;
-    }
-  }
-
-  &::after {
-    @media #{$bp-width-tablet} {
-      margin-left: 35px;
-    }
+    @include lineage($mrg-left: 35px, $mrg-right: 35px);
   }
 }
 
@@ -104,12 +75,12 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 160px;
-  padding: 18px;
+  padding: 19px;
   background-color: $mintcream;
   border: none;
   font-size: 18px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 26px;
   font-family: inherit;
   color: $black;
 
@@ -130,17 +101,21 @@
 
 .report__btn {
   @include btn();
+  width: 280px;
   margin: 0 auto;
-  padding-top: 5px;
 
   @media #{$bp-width-tablet} {
     padding: 0;
+    padding-left: 65px;
     margin: 0;
     width: 322px;
+    text-align: left;
   }
 
   @media #{$bp-width-desktop} {
     width: 479px;
+    padding: 16px 15px;
+    text-align: center;
   }
 }
 

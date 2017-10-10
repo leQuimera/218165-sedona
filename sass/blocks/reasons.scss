@@ -1,18 +1,26 @@
 .reasons {
   margin-bottom: 25px;
 
+  @media #{$bp-width-tablet} {
+    margin-bottom: 55px;
+  }
+
   @media #{$bp-width-desktop} {
-    margin-bottom: 90px;
+    margin-bottom: 56px;
   }
 }
 
 .reasons__header {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 
   @media #{$bp-width-tablet} {
     width: 495px;
+    margin-bottom: 50px;
+  }
+
+  @media #{$bp-width-desktop} {
     margin-bottom: 50px;
   }
 }
@@ -29,7 +37,7 @@
   @media #{$bp-width-tablet} {
     font-size: 21px;
     line-height: 26px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 }
 
@@ -45,7 +53,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 70px;
   }
 }
 

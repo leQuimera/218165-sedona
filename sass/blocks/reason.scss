@@ -32,6 +32,7 @@
 }
 
 .reason__title {
+  margin-bottom: 13px;
   font-size: 18px;
   line-height: 21px;
   color: $black;
@@ -44,11 +45,11 @@
   }
 
   &--bg {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     color: $white;
 
     @media #{$bp-width-tablet} {
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
 
     @media #{$bp-width-desktop} {
@@ -73,10 +74,10 @@
 }
 
 .reason__description {
-  padding-top: 16px;
-  padding-left: 31px;
-  padding-right: 31px;
-  padding-bottom: 16px;
+  padding-top: 9px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,10 +89,16 @@
     padding-top: 23px;
     padding-left: 35px;
     padding-right: 35px;
+    padding-bottom: 29px;
+  }
+
+  @media #{$bp-width-desktop} {
+    padding-top: 23px;
+    padding-bottom: 51px;
   }
 
   &--bg {
-    padding-top: 31px;
+    padding-top: 24px;
     padding-left: 22px;
     padding-right: 22px;
     padding-bottom: 26px;
@@ -121,39 +128,23 @@
 }
 
 .reason__num {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include lineage($color: $dimgray);
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 1px;
   font-weight: 700;
   line-height: 21px;
 
   @media #{$bp-width-tablet} {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
 
-  &::before,
-  &::after {
-    content: "";
-    width: 9px;
-    height: 2px;
-    background-color: $dimgray;
-  }
-
-  &::before {
-    margin-right: 5px;
-  }
-
-  &::after {
-    margin-left: 5px;
-  }
-
-  &--bg::before,
-  &--bg::after {
-    background-color: $white;
+  &--bg {
+    @include lineage($color: $white);
   }
 }
 
@@ -174,22 +165,25 @@
 
   @media #{$bp-width-tablet} {
     width: 512px;
-    height: 257px;
+    height: 256px;
     overflow: hidden;
   }
 
   @media #{$bp-width-desktop} {
     width: 800px;
+    height: 254px;
   }
 
   &--reversal {
     @media #{$bp-width-tablet} {
+      height: 257px;
       order: 1;
     }
   }
 }
 
 .reason__text {
+  padding: 0 5px;
   line-height: 21px;
 
   @media #{$bp-width-tablet} {

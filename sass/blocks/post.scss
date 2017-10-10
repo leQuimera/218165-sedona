@@ -1,8 +1,8 @@
 .post {
-  padding-top: 20px;
+  padding-top: 22px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   border-bottom: 1px solid $steel;
 
   @media #{$bp-width-tablet} {
@@ -54,7 +54,7 @@
     align-items: flex-end;
     padding-left: 20px;
     padding-right: 16px;
-    padding-bottom: 13px;
+    padding-bottom: 16px;
     background-color: $ghostwhite;
   }
 
@@ -88,22 +88,23 @@
 
 .post__author {
   margin-top: -3px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   text-transform: none;
   line-height: 21px;
 
   @media #{$bp-width-desktop} {
+    margin-bottom: 6px;
     color: $white;
   }
 }
 
 .post__title {
-  margin-top: 7px;
+  margin-top: 9px;
   margin-bottom: 4px;
 
   @media #{$bp-width-tablet} {
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   @media #{$bp-width-desktop} {
@@ -113,6 +114,9 @@
 
 .post__btn {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 74px;
   height: 33px;
   padding-left: 36px;
   margin-bottom: 1px;
@@ -122,10 +126,11 @@
   border: none;
 
   @media #{$bp-width-tablet} {
-    margin-bottom: 11px;
+    margin-bottom: 9px;
   }
 
   @media #{$bp-width-desktop} {
+    width: 74px;
     color: $white;
   }
 
