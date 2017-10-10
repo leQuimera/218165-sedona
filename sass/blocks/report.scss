@@ -1,8 +1,8 @@
 .report {
   padding-top: 19px;
+  margin-bottom: 73px;
   text-align: left;
   border-top: 1px solid $steel;
-
 
   @media #{$bp-width-tablet} {
     display: flex;
@@ -17,7 +17,7 @@
   @media #{$bp-width-desktop} {
     width: 960px;
     padding-top: 1px;
-    margin-bottom: 94px;
+    margin-bottom: 90px;
   }
 }
 
@@ -101,17 +101,21 @@
 
 .report__btn {
   @include btn();
+  width: 280px;
   margin: 0 auto;
-  padding-top: 4px;
 
   @media #{$bp-width-tablet} {
     padding: 0;
+    padding-left: 65px;
     margin: 0;
     width: 322px;
+    text-align: left;
   }
 
   @media #{$bp-width-desktop} {
     width: 479px;
+    padding: 16px 15px;
+    text-align: center;
   }
 }
 

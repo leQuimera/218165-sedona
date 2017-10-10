@@ -1,9 +1,11 @@
 .impression {
-  margin-bottom: 41px;
+  padding-bottom: 23px;
+  margin-bottom: 17px;
   border-bottom: 1px solid $steel;
 
   @media #{$bp-width-tablet} {
     order: 1;
+    padding-bottom: 0;
     border: none;
   }
 }
@@ -19,6 +21,7 @@
 
   @media #{$bp-width-desktop} {
     padding-left: 80px;
+    letter-spacing: normal;
   }
 }
 

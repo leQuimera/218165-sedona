@@ -1,13 +1,14 @@
 .reviewer {
-  margin-bottom: 27px;
+  padding-bottom: 9px;
+  margin-bottom: 18px;
   border-bottom: 1px solid $steel;
-
 
   @media #{$bp-width-tablet} {
     position: relative;
     order: 2;
-    border: none;
+    padding-bottom: 0;
     margin-bottom: 55px;
+    border: none;
   }
 
   @media #{$bp-width-desktop} {
@@ -55,7 +56,7 @@
   }
 
   @media #{$bp-width-desktop} {
-    padding-left: 80px;
+    padding-left: 78px;
   }
 }
 
