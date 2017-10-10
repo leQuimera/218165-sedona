@@ -2,6 +2,9 @@ $bp-width-mobile: "(max-width: 767px)";
 $bp-width-tablet: "(min-width: 768px)";
 $bp-width-desktop: "(min-width: 1200px)";
 
+$retina-dpi: "(min-resolution: 144dpi)";
+$retina-dppx: "(min-resolution: 1.5dppx)";
+
 $mbl-width: 320px;
 $tbl-width: 768px;
 $dsk-width: 1200px;

@@ -10,4 +10,27 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   overflow: hidden;
+
+  @media #{$bp-width-mobile} and #{$retina-dpi}, #{$bp-width-mobile} and #{$retina-dppx} {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media #{$bp-width-tablet} {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media #{$bp-width-tablet} and #{$retina-dpi}, #{$bp-width-tablet} and #{$retina-dppx} {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  @media #{$bp-width-desktop} {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media #{$bp-width-desktop} and #{$retina-dpi}, #{$bp-width-desktop} and #{$retina-dppx} {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
 }

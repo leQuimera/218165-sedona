@@ -26,21 +26,29 @@
 
 .post__link {
   display: block;
+  width: 280px;
+  height: auto;
   background-color: $ghostwhite;
+  overflow: hidden;
+
 
   @media #{$bp-width-tablet} {
-    width: 100%;
-    max-height: 266px;
-    overflow: hidden;
+    width: 324px;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 400px;
+    height: 267px;
   }
 
   &--grand {
     @media #{$bp-width-tablet} {
-      min-height: 400px;
+      width: 648px;
     }
 
     @media #{$bp-width-desktop} {
-      min-height: 402px;
+      width: $dsk-width;
+      height: 400px;
     }
   }
 }

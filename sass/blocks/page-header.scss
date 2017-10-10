@@ -30,27 +30,42 @@
   }
 
   @media #{$bp-width-desktop} {
-    left: 547px;
+    top: -56px;
+    left: 506px;
   }
 }
 
 .page-header__slogan {
   position: relative;
   margin-bottom: 37px;
-  background-position: -241px -193px;
+  background-position: 50% 50%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: auto;
 
+  @media #{$bp-width-mobile} and #{$retina-dpi}, #{$bp-width-mobile} and #{$retina-dppx} {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
+
   @media #{$bp-width-tablet} {
     margin-bottom: 67px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media #{$bp-width-tablet} and #{$retina-dpi}, #{$bp-width-tablet} and #{$retina-dppx} {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media #{$bp-width-desktop} {
     margin-bottom: 104px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media #{$bp-width-desktop} and #{$retina-dpi}, #{$bp-width-desktop} and #{$retina-dppx} {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   &--general {
@@ -82,12 +97,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+
+    @media #{$bp-width-tablet} {
+      width: 768px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+
+    @media #{$bp-width-desktop} {
+      width: 1200px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
   }
 
   &--general::after {
-    bottom: 8px;
+    bottom: 7px;
 
-    @media #{$bp-width-desktop} {
+    @media #{$bp-width-tablet} {
       bottom: 0;
     }
   }
