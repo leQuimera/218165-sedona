@@ -54,13 +54,12 @@
   width: 180px;
   font-size: 18px;
   margin: 0 auto;
+  margin-bottom: 35px;
 
   @media #{$bp-width-tablet} {
-    font-size: 21px;
-  }
-
-  @media #{$bp-width-desktop} {
     width: 272px;
+    margin-bottom: 50px;
+    font-size: 21px;
   }
 
   &--sended {
@@ -77,6 +76,7 @@
 
   @media #{$bp-width-tablet} {
     width: 280px;
+    padding: 0;
     margin: 0 auto;
     margin-bottom: 39px;
   }
@@ -94,11 +94,9 @@
   font-size: 18px;
   line-height: 26px;
 
- @media #{$bp-width-tablet} {
+  @media #{$bp-width-tablet} {
+    padding: 0 73px;
     font-size: 30px;
-  }
-
-  @media #{$bp-width-desktop} {
     line-height: 40px;
   }
 }
