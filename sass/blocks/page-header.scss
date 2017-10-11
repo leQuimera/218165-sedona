@@ -1,11 +1,6 @@
-.page-header {
-  width: 100%;
-}
-
 .page-header__promo {
   position: relative;
   padding-top: 56px;
-  width: 100%;
   background-color: $white;
   text-align: center;
 
@@ -89,7 +84,7 @@
   &::after {
     content: "";
     position: absolute;
-    width: 321px;
+    width: 320px;
     height: 30px;
     bottom: -1px;
     left: 0;
