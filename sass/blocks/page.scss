@@ -4,11 +4,12 @@
   padding: 0;
 
   @media #{$bp-width-tablet} {
-    width: $tbl-width;
+    width: auto;
+    max-width: $tbl-width;
   }
 
   @media #{$bp-width-desktop} {
-    width: $dsk-width;
+    max-width: $dsk-width;
     box-shadow: 0 0 30px -4px rgba(0, 0, 0, 0.6);
   }
 }

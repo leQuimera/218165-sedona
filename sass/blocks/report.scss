@@ -105,17 +105,12 @@
   margin: 0 auto;
 
   @media #{$bp-width-tablet} {
-    padding: 0;
-    padding-left: 65px;
-    margin: 0;
     width: 322px;
-    text-align: left;
+    margin: 0;
   }
 
   @media #{$bp-width-desktop} {
     width: 479px;
-    padding: 16px 15px;
-    text-align: center;
   }
 }
 

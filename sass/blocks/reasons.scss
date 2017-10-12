@@ -48,6 +48,7 @@
 
 .reasons__list {
   @include clear-list();
+  background-color: $azure;
 
   @media #{$bp-width-tablet} {
     display: flex;

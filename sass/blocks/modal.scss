@@ -1,14 +1,12 @@
 .modal {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
-  display: none;
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
   width: $mbl-width;
-  padding-top: 60px;
-  padding-bottom: 35px;
-  margin-top: -150px;
-  margin-left: -160px;
+  padding-top: 34px;
   text-align: center;
   background-color: $white;
   border-bottom: 1px solid $steel;
@@ -18,15 +16,14 @@
 
   @media #{$bp-width-tablet} {
     width: 400px;
-    margin-left: -200px;
   }
 
   &--sended {
-    display: none;
+    width: $mbl-width;
+    padding-bottom: 0;
 
     @media #{$bp-width-tablet} {
-      margin-left: -324px;
-      width: 648px;
+      width: 645px;
     }
   }
 
@@ -35,25 +32,89 @@
   }
 }
 
-.modal__btn {
-  @include btn();
-  margin: 0 auto;
-  padding-top: 0;
+.modal__main {
+  @media #{$bp-width-tablet} {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 49px;
+  }
 }
 
-.modal__message {
-  margin-bottom: 30px;
+.modal__inner {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background-color: $mintcream;
 
   @media #{$bp-width-tablet} {
-    width: 280px;
-    margin: 0 auto;
-    margin-bottom: 39px;
+    padding: 45px 95px;
+  }
+}
+
+.modal__btn {
+  @include btn();
+  width: 180px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  @media #{$bp-width-tablet} {
+    width: 272px;
+    margin-bottom: 50px;
+    font-size: 21px;
   }
 
   &--sended {
+    width: 100%;
+
     @media #{$bp-width-tablet} {
-      width: 420px;
-      margin-bottom: 80px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal__message {
+  box-sizing: border-box;
+  padding: 0 41px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media #{$bp-width-tablet} {
+    width: 280px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  &--sended {
+    width: 100%;
+    padding: 0 5px;
+    margin-bottom: 34px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 29px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media #{$bp-width-tablet} {
+    padding: 0 71px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 23px;
+    letter-spacing: 0.02em;
+  }
+
+  @media #{$bp-width-desktop} {
+    letter-spacing: 0.01em;
+  }
+
+  &--err {
+    @media #{$bp-width-tablet} {
+      margin-bottom: 24px;
     }
   }
 }

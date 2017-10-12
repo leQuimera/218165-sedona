@@ -1,5 +1,4 @@
 .page-footer {
-  width: 100%;
   text-align: center;
   background-color: $ghostwhite;
 
@@ -8,7 +7,6 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
-    box-sizing: border-box;
     padding-left: 60px;
     padding-right: 56px;
   }
@@ -27,6 +25,9 @@
 
   @media #{$bp-width-tablet} {
     margin-right: -8px;
+    max-width: 150px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   @media #{$bp-width-desktop} {

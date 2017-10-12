@@ -5,6 +5,7 @@
   @media #{$bp-width-tablet} {
     position: relative;
     width: 33.33%;
+    flex-grow: 1;
   }
 
   &--full {
@@ -82,7 +83,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: $azure;
 
   @media #{$bp-width-tablet} {
     justify-content: flex-start;
@@ -106,7 +106,7 @@
     color: $white;
 
     @media #{$bp-width-tablet} {
-      width: 256px;
+      width: 33%;
       box-sizing: border-box;
       padding-top: 24px;
       padding-left: 28px;
@@ -164,7 +164,7 @@
   overflow: hidden;
 
   @media #{$bp-width-tablet} {
-    width: 512px;
+    width: 67%;
     height: 256px;
     overflow: hidden;
   }
@@ -176,9 +176,21 @@
 
   &--reversal {
     @media #{$bp-width-tablet} {
-      height: 257px;
+      height: 256px;
       order: 1;
     }
+  }
+}
+
+.reason__picture {
+  @media #{$bp-width-tablet} {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media #{$bp-width-desktop} {
+    width: 800px;
+    height: 400px;
   }
 }
 
