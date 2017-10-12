@@ -25,6 +25,9 @@
 
   @media #{$bp-width-tablet} {
     margin-right: -8px;
+    max-width: 150px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   @media #{$bp-width-desktop} {
