@@ -83,7 +83,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: $azure;
 
   @media #{$bp-width-tablet} {
     justify-content: flex-start;
