@@ -34,7 +34,9 @@
 
 .modal__main {
   @media #{$bp-width-tablet} {
-    padding: 0 95px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 49px;
   }
 }
 
@@ -64,6 +66,10 @@
 
   &--sended {
     width: 100%;
+
+    @media #{$bp-width-tablet} {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -78,7 +84,7 @@
     width: 280px;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 39px;
+    margin-bottom: 35px;
   }
 
   &--sended {
@@ -95,8 +101,20 @@
   line-height: 26px;
 
   @media #{$bp-width-tablet} {
-    padding: 0 73px;
+    padding: 0 71px;
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 23px;
+    letter-spacing: 0.02em;
+  }
+
+  @media #{$bp-width-desktop} {
+    letter-spacing: 0.01em;
+  }
+
+  &--err {
+    @media #{$bp-width-tablet} {
+      margin-bottom: 24px;
+    }
   }
 }
