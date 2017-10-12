@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    width: 100%;
+    flex-wrap: wrap;
     padding-top: 15px;
     padding-bottom: 13px;
     background-color: $white;
@@ -62,9 +62,15 @@
     margin-right: 44px;
   }
 
-  &:nth-child(2) {
+  &:nth-child(4n+2) {
     @media #{$bp-width-tablet} {
       margin-right: auto;
+    }
+  }
+
+  &:nth-child(4n+3) {
+    @media #{$bp-width-tablet} {
+      margin-left: 30px;
     }
   }
 }
@@ -115,17 +121,14 @@
   }
 
   &--active {
-    // Оставила, потому что если убрать, то курсор при наведении меняется
-    // на курсов-вставку текста. Что выглядит не очень, как мне кажется.
+    color: $broun;
     cursor: default;
 
-    &:hover,
-    &:active {
-      color: $white;
+    &:hover {
+      color: $choco;
       background-color: $steelblue;
 
       @media #{$bp-width-tablet} {
-        color: $black;
         background-color: $white;
       }
     }

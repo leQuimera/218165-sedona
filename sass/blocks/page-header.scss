@@ -1,31 +1,32 @@
+.page-header {
+  @media #{$bp-width-tablet} {
+    position: relative;
+  }
+}
+
 .page-header__promo {
-  position: relative;
-  padding-top: 56px;
+  margin-top: -28px;
   background-color: $white;
   text-align: center;
 
   @media #{$bp-width-tablet} {
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 
 .page-header__logo {
+  position: relative;
   display: block;
-  position: absolute;
-  top: 0;
   left: 110px;
   z-index: 10;
 
   @media #{$bp-width-tablet} {
-    display: block;
     position: absolute;
-    top: -59px;
+    top: 0;
     left: 333px;
-    z-index: 10;
   }
 
   @media #{$bp-width-desktop} {
-    top: -56px;
     left: 506px;
   }
 }
