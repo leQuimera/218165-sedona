@@ -11,6 +11,11 @@
 </head>
 
 <body class="page">
+
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <!-- Навигация по сайту -->
     <nav class="page-nav">
@@ -158,13 +163,13 @@
       <a href="https://ru-ru.facebook.com/" class="socials__link socials__link--fb" target="_blank">
         <span class="visually-hidden">Facebook</span>
         <svg width="9" height="19" class="socials__icon">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#fb"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb"></use>
         </svg>
       </a>
       <a href="https://www.youtube.com/" class="socials__link socials__link--ut" target="_blank">
         <span class="visually-hidden">Youtube</span>
         <svg width="20" height="14" class="socials__icon">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ut"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ut"></use>
         </svg>
       </a>
     </section>
@@ -172,7 +177,7 @@
       <span>Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" target="_blank">
         <svg width="27" height="34" class="page-footer__copyright-icon">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#html-logo"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#html-logo"></use>
         </svg>
         <span class="visually-hidden">HTLAcademy</span>
       </a>
@@ -200,7 +205,6 @@
   <!-- //Модальное окно: отправка отзыва -->
 
   <script src="js/scripts.min.js"></script>
-  <script>svg4everybody();</script>
 
 </body>
 </html>

@@ -33,60 +33,75 @@ gulp.task("style", function() {
     ]))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
-gulp.task("scripts-del", function() {
-  return del("js/scripts.min.js");
-});
-
 // Сборка и минимизация библиотек js
-gulp.task("scripts", ["scripts-del"], function() {
+gulp.task("scripts", function() {
   return gulp.src("js/*.js")
     .pipe(plumber())
     .pipe(concat("scripts.min.js"))
     .pipe(uglify())
-    .pipe(gulp.dest("js"));
+    .pipe(gulp.dest("build/js"));
 });
 
 // SVG-спрайт
-gulp.task("sprite-del", function() {
-  return del("img/sprite.svg");
-});
-
-gulp.task("sprite", ["sprite-del"], function() {
+gulp.task("sprite", function() {
   return gulp.src("img/sprite/*.svg")
-    .pipe(imagemin(imagemin.svgo()))
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+
+// Оптимизация картинок
+gulp.task("images", function() {
+  return gulp.src("img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progessive: true}),
+      imagemin.svgo()
+    ]))
     .pipe(gulp.dest("img"));
 });
 
-gulp.task("serve", ["sprite", "style", "scripts"], function() {
+gulp.task("webp", function() {
+  return gulp.src("img/webp/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("img/webp"));
+});
+
+gulp.task("html", function() {
+  return gulp.src("*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
+});
+
+gulp.task("build", function(done) {
+  run("clean", "copy", "style", "scripts", "sprite", "html", done);
+});
+
+gulp.task("copy", function() {
+  return gulp.src([
+      "fonts/**/*.{woff,woff2}",
+      "img/**",
+      "js/**"
+    ], {
+      base: "."
+    })
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("serve", function() {
   server.init({
-    server: ".",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/"
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
-});
-
-gulp.task("build", ["clean", "style", "scripts", "sprite"], function() {
-  var buildCss = gulp.src("css/style.min.css")
-      .pipe(gulp.dest("build/css"))
-  var buildFonts = gulp.src("fonts/**/*.*") // Переносим шрифты в продакшен
-      .pipe(gulp.dest("build/fonts"))
-  var buildJs = gulp.src("js/scripts.min.js") // Переносим скрипты в продакшен
-      .pipe(gulp.dest("build/js"))
-  var buildHtml = gulp.src("*.html") // Переносим HTML в продакшен
-      .pipe(gulp.dest("build"));
-  var buildImg = gulp.src("img/**/*.*") // Переносим HTML в продакшен
-      .pipe(gulp.dest("build/img"));
+  gulp.watch("*.html", ["html"]);
 });
