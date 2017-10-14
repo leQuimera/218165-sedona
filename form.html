@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
-  <script src="js/picturefill.js" async></script>
-  <script src="js/svg4everybody.min.js"></script>
+  <link href="css/style.min.css" rel="stylesheet">
+  <script src="js/scripts.min.js"></script>
   <script>svg4everybody();</script>
 </head>
 
@@ -55,11 +54,11 @@
         <ul class="reviewer__list">
           <li class="reviewer__item">
             <label class="reviewer__label" for="firstname">Имя<sup>*</sup>: </label>
-            <input class="reviewer__input" type="text" placeholder="Петр" name="firstname" id="firstname" required>
+            <input class="reviewer__input" type="text" placeholder="Петр" name="firstname" id="firstname" required="">
           </li>
           <li class="reviewer__item">
             <label class="reviewer__label" for="lastname">Фамилия<sup>*</sup>: </label>
-            <input class="reviewer__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required>
+            <input class="reviewer__input" type="text" placeholder="Иванов" name="lastname" id="lastname" required="">
           </li>
           <li class="reviewer__item">
             <label class="reviewer__label" for="middlename">Отчество: </label>
@@ -76,11 +75,11 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <label class="contacts__label" for="phone"><span>Контактный</span> телефон<sup>*</sup>: </label>
-            <input class="contacts__input contacts__input--tel" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required>
+            <input class="contacts__input contacts__input--tel" type="tel" placeholder="Введите телефон" title="Формат ввода: xxx-xxxxx" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{5}" required="">
           </li>
           <li class="contacts__item">
             <label class="contacts__label" for="email">Электронная почта<sup>*</sup>: </label>
-            <input class="contacts__input contacts__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+            <input class="contacts__input contacts__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required="">
           </li>
         </ul>
       </fieldset>
@@ -92,7 +91,7 @@
         <legend class="impression__title">Ваше общее впечатление:</legend>
         <ul class="impression__list">
           <li class="impression__item">
-            <input class="impression__radio" type="radio" name="impression" id="impression10" value="10" checked>
+            <input class="impression__radio" type="radio" name="impression" id="impression10" value="10" checked="">
             <label class="impression__label" for="impression10">Скорее положительное</label>
           </li>
           <li class="impression__item">
@@ -113,15 +112,15 @@
         <legend class="places__title"><span class="places__title-wrap">Посещенные достопримечательности:</span></legend>
         <ul class="places__list">
           <li class="places__item">
-            <input class="places__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked>
+            <input class="places__check" type="checkbox" name="visited" value="Мост Дьявола" id="visit1" checked="">
             <label class="places__label" for="visit1">Мост&nbsp;Дьявола</label>
           </li>
           <li class="places__item">
-            <input class="places__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked>
+            <input class="places__check" type="checkbox" name="visited" value="Слайд-парк" id="visit2" checked="">
             <label class="places__label" for="visit2">Слайд-парк</label>
           </li>
           <li class="places__item">
-            <input class="places__check" type="checkbox" name="visited" value="Гора-Колокол" id="visit3" checked>
+            <input class="places__check" type="checkbox" name="visited" value="Гора-Колокол" id="visit3" checked="">
             <label class="places__label" for="visit3">Гора-Колокол</label>
           </li>
           <li class="places__item">
@@ -156,7 +155,7 @@
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#tw"></use>
         </svg>
       </a>
-      <a href="https://ru-ru.facebook.com/" class="socials__link socials__link--fb" target="_blank" >
+      <a href="https://ru-ru.facebook.com/" class="socials__link socials__link--fb" target="_blank">
         <span class="visually-hidden">Facebook</span>
         <svg width="9" height="19" class="socials__icon">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#fb"></use>
@@ -200,7 +199,8 @@
   </div>
   <!-- //Модальное окно: отправка отзыва -->
 
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <script>svg4everybody();</script>
 
 </body>
 </html>
