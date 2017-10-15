@@ -158,16 +158,15 @@
   }
 }
 
-.places__check:hover + .places__label::before {
+.places__check:hover + .places__label::before,
+.places__check:focus + .places__label::before {
   background-color: $steel;
 }
 
-.places__check:active + .places__label::before,
-.places__check:focus + .places__label::before {
+.places__check:active + .places__label::before {
   background-color: $lightgray;
 }
 
-.places__check:active + .places__label::after,
-.places__check:focus + .places__label::after {
+.places__check:active + .places__label::after {
   border-color: $lightslategray;
 }

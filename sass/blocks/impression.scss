@@ -123,16 +123,15 @@
   }
 }
 
-.impression__radio:hover + .impression__label::before {
+.impression__radio:hover + .impression__label::before,
+.impression__radio:focus + .impression__label::before {
   background-color: $steel;
 }
 
-.impression__radio:active + .impression__label::before,
-.impression__radio:focus + .impression__label::before {
+.impression__radio:active + .impression__label::before {
   background-color: $lightgray;
 }
 
-.impression__radio:active + .impression__label::after,
-.impression__radio:focus + .impression__label::after {
+.impression__radio:active + .impression__label::after {
   background-color: $lightslategray;
 }
