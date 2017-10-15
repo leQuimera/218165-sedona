@@ -176,6 +176,10 @@
 
   &:hover {
     fill: $dimgray;
+
+    @media #{$bp-width-tablet} {
+      fill: $lightslategray;
+    }
   }
 
   &:active {
