@@ -64,7 +64,7 @@
   &--cut {
     @media #{$bp-width-tablet} {
       padding: 0 15px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     @media #{$bp-width-desktop} {
@@ -75,7 +75,7 @@
 }
 
 .reason__description {
-  padding-top: 9px;
+  padding-top: 10px;
   padding-left: 27px;
   padding-right: 27px;
   padding-bottom: 15px;
@@ -86,7 +86,7 @@
 
   @media #{$bp-width-tablet} {
     justify-content: flex-start;
-    padding-top: 23px;
+    padding-top: 24px;
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 29px;
@@ -140,7 +140,7 @@
   }
 
   @media #{$bp-width-desktop} {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   &--bg {
@@ -170,6 +170,8 @@
   }
 
   @media #{$bp-width-desktop} {
+    display: flex;
+    align-items: center;
     width: 800px;
     height: 254px;
   }

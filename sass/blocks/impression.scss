@@ -12,7 +12,7 @@
 
 .impression__title {
   @include form-title();
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 
   @media #{$bp-width-tablet} {
     margin-bottom: 51px;
@@ -22,6 +22,7 @@
 
   @media #{$bp-width-desktop} {
     padding-left: 80px;
+    margin-bottom: 53px;
   }
 }
 

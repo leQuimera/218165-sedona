@@ -63,8 +63,12 @@
   box-sizing: border-box;
   width: 35px;
   height: 35px;
-  margin-top: -4px;
+  margin-top: -10px;
   margin-left: 7px;
+
+  @media #{$bp-width-tablet} {
+    margin-top: -12px;
+  }
 }
 
 .page-footer__copyright-icon:hover {
