@@ -50,7 +50,7 @@
   }
 }
 
-@mixin lineage($color: $whitesmoke, $mrg-left: 5px, $mrg-right: 5px) {
+@mixin lineage($color: $shadowgray, $mrg-left: 5px, $mrg-right: 5px) {
   display: flex;
   justify-content: center;
   align-items: center;
