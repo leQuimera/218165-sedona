@@ -97,7 +97,7 @@
     background-position: bottom center;
 
     @media #{$bp-width-tablet} {
-      bottom: 0px;
+      bottom: 0;
       height: 57px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
