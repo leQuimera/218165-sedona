@@ -1,6 +1,10 @@
 'use strict';
 
 var toggler = document.querySelector('.page-nav__toggle');
+var menuList = document.querySelector('.page-nav__list');
+
+toggler.classList.add('page-nav__toggle--closed');
+menuList.classList.add('page-nav__list--closed');
 
 var initMap = function () {
   var mapOptions = {
@@ -10,7 +14,7 @@ var initMap = function () {
   }
 
   var map = new google.maps.Map(document.querySelector('.driving__map'), mapOptions);
-  var image = "../img/icon-map-marker.svg";
+  var image = "img/icon-map-marker.svg";
   var myLatLng = new google.maps.LatLng(34.857323, -111.794933);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
@@ -21,7 +25,6 @@ var initMap = function () {
 }
 
 var onMenuOperation = function (evt) {
-  var menuList = document.querySelector('.page-nav__list');
 
   evt.preventDefault();
   menuList.classList.toggle('page-nav__list--closed');

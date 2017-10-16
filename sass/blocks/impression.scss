@@ -17,11 +17,11 @@
   @media #{$bp-width-tablet} {
     margin-bottom: 51px;
     text-align: left;
+    letter-spacing: normal;
   }
 
   @media #{$bp-width-desktop} {
     padding-left: 80px;
-    letter-spacing: normal;
   }
 }
 
@@ -45,7 +45,6 @@
   width: 100%;
   align-items: center;
   min-height: 69px;
-  cursor: pointer;
 
   @media #{$bp-width-tablet} {
     margin-bottom: 9px;
@@ -60,7 +59,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: 0.01em;
   color: $black;
   text-transform: none;
   cursor: pointer;
@@ -123,16 +121,15 @@
   }
 }
 
-.impression__radio:hover + .impression__label::before {
+.impression__radio:hover + .impression__label::before,
+.impression__radio:focus + .impression__label::before {
   background-color: $steel;
 }
 
-.impression__radio:active + .impression__label::before,
-.impression__radio:focus + .impression__label::before {
+.impression__radio:active + .impression__label::before {
   background-color: $lightgray;
 }
 
-.impression__radio:active + .impression__label::after,
-.impression__radio:focus + .impression__label::after {
+.impression__radio:active + .impression__label::after {
   background-color: $lightslategray;
 }
