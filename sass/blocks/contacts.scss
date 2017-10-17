@@ -18,7 +18,7 @@
 
 .contacts__title {
   @include form-title();
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   @media #{$bp-width-tablet} {
     margin-bottom: 30px;

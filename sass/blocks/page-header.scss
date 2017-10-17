@@ -72,15 +72,15 @@
 
     @media #{$bp-width-tablet} {
       padding-top: 76px;
-      padding-bottom: 86px;
-      margin-bottom: 18px;
+      padding-bottom: 84px;
+      margin-bottom: 20px;
       background-position: 50% 50%;
     }
 
     @media #{$bp-width-desktop} {
       padding-top: 76px;
       padding-bottom: 84px;
-      margin-bottom: 19px;
+      margin-bottom: 20px;
     }
   }
 
@@ -108,7 +108,7 @@
   }
 
   &--general::after {
-    bottom: 7px;
+    bottom: 8px;
 
     @media #{$bp-width-tablet} {
       bottom: 0;
