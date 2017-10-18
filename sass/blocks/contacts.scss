@@ -21,7 +21,7 @@
   margin-bottom: 24px;
 
   @media #{$bp-width-tablet} {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     width: 100%;
   }
 
@@ -47,6 +47,7 @@
 
   @media #{$bp-width-desktop} {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -84,11 +85,11 @@
     margin-right: 14px;
     padding-left: 0;
   }
+}
 
-  & span {
-    @media #{$bp-width-desktop} {
-      display: none;
-    }
+.contacts__label span {
+  @media #{$bp-width-desktop} {
+    display: none;
   }
 }
 

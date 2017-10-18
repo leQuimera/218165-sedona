@@ -1,5 +1,5 @@
 .video {
-  margin-bottom: 73px;
+  margin-bottom: 75px;
 
   @media #{$bp-width-tablet} {
     margin-bottom: 63px;
@@ -39,8 +39,9 @@
 
 .video__content {
   width: 320px;
-  padding-top: 156px;
+  padding-top: 155px;
   background-image: url("../img/photo/video-mobile@1x.jpg");
+  background-color: $lightblue;
   background-position: top center;
   background-repeat: no-repeat;
 
@@ -139,6 +140,10 @@
   }
 }
 
+.video__inner {
+  background-color: $white;
+}
+
 .video__panel {
   display: flex;
   justify-content: space-between;
@@ -149,8 +154,8 @@
 
   @media #{$bp-width-tablet} {
     position: absolute;
-    bottom: 12px;
-    left: 7px;
+    bottom: 13px;
+    left: 11px;
     width: 622px;
     background-color: transparent;
   }

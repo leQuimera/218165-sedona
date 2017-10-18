@@ -22,11 +22,7 @@
 
   @media #{$bp-width-tablet} {
     width: 100%;
-    margin-bottom: 35px;
-  }
-
-  @media #{$bp-width-desktop} {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 }
 
@@ -152,10 +148,10 @@
   width: 54px;
   height: 54px;
   opacity: 0;
+}
 
-  &:checked + .places__label::after {
-    opacity: 1;
-  }
+.places__check:checked + .places__label::after {
+  opacity: 1;
 }
 
 .places__check:hover + .places__label::before,

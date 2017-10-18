@@ -43,13 +43,13 @@
     padding: 0 220px;
     margin-bottom: 46px;
   }
+}
 
-  & br {
-    display: none;
+.search__lead br {
+  display: none;
 
-    @media #{$bp-width-tablet} {
-      display: inline;
-    }
+  @media #{$bp-width-tablet} {
+    display: inline;
   }
 }
 
