@@ -12,7 +12,7 @@
 
 .impression__title {
   @include form-title();
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 
   @media #{$bp-width-tablet} {
     margin-bottom: 51px;
@@ -116,10 +116,10 @@
   width: 54px;
   height: 54px;
   opacity: 0;
+}
 
-  &:checked + .impression__label::after {
-    opacity: 1;
-  }
+.impression__radio:checked + .impression__label::after {
+  opacity: 1;
 }
 
 .impression__radio:hover + .impression__label::before,

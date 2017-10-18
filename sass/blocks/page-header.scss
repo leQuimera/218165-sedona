@@ -35,9 +35,10 @@
 
 .page-header__slogan {
   position: relative;
-  margin-bottom: 37px;
-  background-position: 50% 50%;
+  margin-bottom: 35px;
+  background-position: 50% 100%;
   background-image: url("../img/photo/bg-back-mobile@1x.jpg");
+  background-color: #5d89b6;
   background-repeat: no-repeat;
   background-size: auto;
 
@@ -67,20 +68,20 @@
   }
 
   &--general {
-    margin-bottom: 10px;
-    background-position: -226px 1px;
+    height: 390px;
+    margin-bottom: 18px;
+    background-position: -226px 0;
+    overflow: hidden;
 
     @media #{$bp-width-tablet} {
-      padding-top: 76px;
-      padding-bottom: 84px;
-      margin-bottom: 20px;
+      padding-top: 44px;
+      padding-bottom: 83px;
+      margin-bottom: 23px;
       background-position: 50% 50%;
     }
 
     @media #{$bp-width-desktop} {
-      padding-top: 76px;
-      padding-bottom: 84px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
   }
 
@@ -97,7 +98,7 @@
     background-position: bottom center;
 
     @media #{$bp-width-tablet} {
-      bottom: 0;
+      bottom: -1px;
       height: 57px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
@@ -108,10 +109,10 @@
   }
 
   &--general::after {
-    bottom: 8px;
+    bottom: 0;
 
-    @media #{$bp-width-tablet} {
-      bottom: 0;
+    @media #{$bp-width-desktop} {
+      bottom: -1px;
     }
   }
 }
@@ -122,18 +123,19 @@
   height: 386px;
 
   @media #{$bp-width-tablet} {
-    padding-top: 0;
+    padding-top: 32px;
     width: 462px;
     height: auto;
   }
 
   @media #{$bp-width-desktop} {
-    padding-top: 1px;
+    width: 460px;
+    padding-top: 34px;
   }
 
   &--inner {
     padding-top: 1px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     width: 230px;
     height: 140px;
 
