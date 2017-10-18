@@ -85,11 +85,11 @@
     margin-right: 14px;
     padding-left: 0;
   }
-}
 
-.contacts__label span {
-  @media #{$bp-width-desktop} {
-    display: none;
+  span {
+    @media #{$bp-width-desktop} {
+      display: none;
+    }
   }
 }
 

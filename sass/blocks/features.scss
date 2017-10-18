@@ -139,12 +139,13 @@
   @media #{$bp-width-tablet} {
     padding: 0 50px;
   }
-}
 
-.features__text br {
-  display: none;
+  br {
+    display: none;
 
-  @media #{$bp-width-desktop} {
-    display: block;
+    @media #{$bp-width-desktop} {
+      display: block;
+    }
   }
 }
+
